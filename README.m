@@ -17,9 +17,9 @@
             background-size: cover; /* Растягиваем изображение на весь экран */
             background-position: center; /* Центрируем изображение */
             background-attachment: fixed; /* Фон остается фиксированным при прокрутке */
-        }
+                }
 
-        /* Стили для темной темы */
+        
         body.dark-mode {
             background-color: #333;
             color: #f4f4f4;
@@ -134,7 +134,7 @@
     body.dark-mode .news-item {
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
-.news-item {
+  .news-item {
             margin-bottom: 20px;
             padding: 15px;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -346,6 +346,6 @@
                 alert('Пожалуйста, введите комментарий.');
             }
         }
-    </script>
+    
 </body>
 </html>

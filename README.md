@@ -261,11 +261,11 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="C:\Users\Студент\Downloads\images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
+        <img id="logo" src="images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
         <nav>
-            <img src="C:\Users\Студент\Downloads\57e7daaf1b87c15761ae3c09.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
-            <img src="C:\Users\Студент\Downloads\58ff0adf382df15ba44277fe.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
-            <img src="C:\Users\Студент\Downloads\57e7daaf1b87c15761ae3c09.png" alt="Показать все" onclick="showImages('all')"> <!-- Иконка для показа всех
+            <img src="diamon.html.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
+            <img src="diamon.html.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
+            <img src="diamon.html.png" alt="Показать все" onclick="showImages('all')"> <!-- Иконка для показа всех
 скриншотов -->
 
         </nav>
@@ -273,8 +273,8 @@
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
-        <img class="screenshot" src="C:\Users\Студент\Downloads\the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
-        <img class="screenshot" src="C:\Users\Студент\Desktop\Ушакова и Егорова сайт\images.project_folder\игр_процесс1.jpg.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
+        <img class="screenshot" src="images (1).jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
+        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 2"> <!-- Скриншот 2 -->
         <img class="screenshot" src="C:\Users\Студент\Downloads\images (1).jpg" alt="Скриншот 3"> <!-- Скриншот 3 -->
     </main>
 </body>

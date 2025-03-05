@@ -7,7 +7,7 @@
     <style>
 
         body {
-               background-image: url('\\192.168.2.90\kb6\студент\61f17c1a9a4f444bf5ec553b58a45d70.png'); /* Укажите путь к Вашему изображению */
+               background-image: url('icon-menu.png.jpg'); /* Укажите путь к Вашему изображению */
                background-size: cover; /* Растягиваем изображение на весь экран */
                background-position: center; /* Центрируем изображение */
                background-attachment: fixed; /* Фон остается фиксированным при прокрутке */

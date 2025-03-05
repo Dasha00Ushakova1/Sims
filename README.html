@@ -14,7 +14,7 @@
             background-color: #f4f4f4;
             color: #333;
             transition: background-color 0.3s, color 0.3s;
-            background-image: url('\\192.168.2.90\kb6\студент\61f17c1a9a4f444bf5ec553b58a45d70.png'); /* Укажите путь к Вашему изображению */
+            background-image: url(''); /* Укажите путь к Вашему изображению */
             background-size: cover; /* Растягиваем изображение на весь экран */
             background-position: center; /* Центрируем изображение */
             background-attachment: fixed; /* Фон остается фиксированным при прокрутке */
@@ -277,7 +277,7 @@
   
 
 
-        </nav>
+          </nav>
         <button id="theme-toggle">Сменить тему</button> <!-- Кнопка переключения темы -->
     </header>
     <main>
@@ -285,7 +285,8 @@
         <h2>Скриншоты игры</h2>
         <img class="screenshot" src="images (1).jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
         <img class="screenshot" src="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 2"> <!-- Скриншот 2 -->
-        <img class="screenshot" src="The_Sims_4_Screenshot_39.webpg" alt="Скриншот 3"> <!-- Скриншот 3 -->
+        <img class="screenshot" src="The_Sims_4_Screenshot_39.webp" alt="Скриншот 3"> <!-- Скриншот 3 -->
+        
         <!-- Раздел новостей -->
         <section id="news">
             <h2>Новости</h2>
@@ -322,7 +323,8 @@
             </div>
         </section>
     </main>
-     <!-- Модальное окно -->
+    
+    <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -346,7 +348,8 @@
                 screenshots[2].classList.add('show'); // Показать третий скриншот
             }
         }
-             // Theme Toggle Function
+
+        // Theme Toggle Function
         document.getElementById('theme-toggle').addEventListener('click', function() {
             document.body.classList.toggle('dark-mode');
         });
@@ -369,14 +372,8 @@
 
         // Comment System Function
         function addComment(newsItem) {
-            let commentText = document.getElementById('commentText' + newsItem).value;
-            if (commentText) {
-                let commentDiv = document.createElement('div');
-                commentDiv.className = 'comment';
-                commentDiv.textContent = commentText;
-                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
-                document.getElementById('commentText' + newsItem).value = '';
-            }
+            let commentText = document.getElementById('commentText' + newsItem).
+
         }
     </script>
 </body>

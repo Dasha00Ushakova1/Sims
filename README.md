@@ -284,15 +284,14 @@ button:hover {
         <h3>Обновление системы</h3>
         <p>Выпущено новое обновление с улучшениями и исправлениями.</p>
         <div class="comments-section">
-            <h1>Комментарии</h1>
+            <h4>Комментарии:</h4>
     <div class="comment-section" id="comment-section">
-        <div class="comment">Первый комментарий</div>
-        <div class="comment">Второй комментарий</div>
-        <div class="comment">Третий комментарий</div>
+        <div class="comment">Отличная обнова! Спасибо разработчикам!</div>
+        <div class="comment">Есть небольшие баги, но в целом хорошо.</div>
     </div>
     <div class="new-comment">
-        <textarea id="comment-input" rows="4" cols="50" placeholder="Введите ваш комментарий"></textarea><br>
-        <button id="submit-comment">Добавить комментарий</button>
+        <textarea id="comment-input" rows="4" cols="50" placeholder="Введите ваш комментарий"></textarea><br />
+        <button id="submit-comment">Отправить</button>
     </div>
     <script>
         document.getElementById('submit-comment').addEventListener('click', function() {
@@ -312,29 +311,18 @@ button:hover {
                 alert('Пожалуйста, введите комментарий.');
             }
         });
-            <h4>Комментарии:<h4>
-            <div class="comment">
-                <p>Отличная обнова! Спасибо разработчикам!</p>
-            </div>
-            <div class="comment">
-                <p>Есть небольшие баги, но в целом хорошо.</p>
-            </div>
-            <div class="comment-form">
-                <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment(1)">Отправить</button>
-            </div>
-        </div>
-    </div>
+    ////////////////
     <div class="news-item">
-        <h3>Турнир по игре</h3>
-        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+        </h3>Турнир по игре<h3>
+        </p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
-            <h4>Комментарии:</h4>
+        </h4>Комментарии:</h4>
             <div class="comment">
-                <p>Участвую!</p>
-            </div>
+        </p>Участвую!<p>
+        </div>
             <div class="comment-form">
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
+                <p>addComment(2)</p>
                 <button onclick="addComment(2)">Отправить</button>
             </div>
         </div>

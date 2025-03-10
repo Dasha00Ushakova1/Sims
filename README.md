@@ -247,7 +247,7 @@ button:hover {
 .modal {
     animation: fadeIn 0.5s ease-in-out;
 }
-    </style>
+    <style>
 <head>
 <body>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">

@@ -337,8 +337,6 @@
             showImages('all');
         };
     </script>
-</body>
-</html>
 <form id="contact-form">
     <label>Имя: <input type="text" id="name"></label>
     <label>Email: <input type="email" id="email"></label>

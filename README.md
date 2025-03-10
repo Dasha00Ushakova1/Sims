@@ -267,7 +267,7 @@
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="350" height="200" src="https://yandex.ru/video/preview/10391244733015096193"></iframe>
+<iframe width="350" height="200" src="https://www.google.com/search?sca_esv=715d5d5656887f13&sxsrf=AHTn8zr7xhVj8QY-hSFSYT8T9Hl_UU9sNg:1741629581499&q=%D0%BB%D1%8E%D0%B1%D0%BE%D0%B5+%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B5+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B5+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C+%D0%B4%D0%BB%D1%8F+%D1%81%D0%B0%D0%B9%D1%82%D0%B0+%D0%BF%D1%80%D0%BE+Sims&udm=7&fbs=ABzOT_DL2zxtWSwAPDvmPsBiplySanC2Fp1BA92E3BjBhFI5ooTADZI2jNIWY1aS9xSWvLrxGlhQYDV4so0NhhPHXzt-lT2wW0HN8TyVIyvLc5K6OQKleU8ECe0IYI89qz66QbEU9S7nQfuT3phfENd9gLjFxvlA7jLK_6AKSS6JdPc25fKMId-PxCteik5uPa6BjigvCy5ZzoJUDPw1gj0a_Xmg3Oionm7MBk7FoZ0v2f00h0oJqHI0HNZmNhF7sxtPMZnxauFJ&sa=X&ved=2ahUKEwjxl6Tki4CMAxWXHXcKHR3IECsQtKgLegQIFxAB&biw=1920&bih=879&dpr=1#fpstate=ive&vld=cid:5c78e054,vid:A6L4srRINcU,st:0"></iframe>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">

@@ -294,7 +294,7 @@
             </div>
             <div class="comment-form">
                 <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment()">Отправить</button>
+                <button onclick="addComment(1)">Отправить</button>
             </div>
         </div>
     </div>
@@ -330,6 +330,7 @@
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
+    </script>
     </script>
          <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>

@@ -304,21 +304,43 @@
                 modal.style.display = "none";
             }
         }
-        function addComment(newsItem) {
-            let commentText = document.getElementById('commentText' + newsItem).value;
-            if (commentText) {
-                let commentDiv = document.createElement('div');
-                commentDiv.className = 'comment';
-                commentDiv.textContent = commentText;
-                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
-                document.getElementById('commentText' + newsItem).value = '';
-            }
-        }
-         // Show "all" images by default on page load.
-        window.onload = function() {
-            showImages('all');
-        };
-    </script>
+        // Функция для добавления комментария
+function addComment(event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение формы
+    // Получаем значения имени и текста комментария
+    const name = document.getElementById('comment-name').value;
+    const text = document.getElementById('comment-text').value;
+    // Создаем объект комментария
+    const comment = {
+        name: name,
+        text: text
+    };
+    // Получаем существующие комментарии из локального хранилища
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    // Добавляем новый комментарий в массив
+    comments.push(comment);
+    // Сохраняем обновленный массив комментариев в локальное хранилище
+    localStorage.setItem('comments', JSON.stringify(comments));
+    // Очищаем поля ввода
+    document.getElementById('comment-name').value = '';
+    document.getElementById('comment-text').value = '';
+    // Обновляем отображение комментариев
+    displayComments();
+}
+
+function displayComments() {
+    const commentsSection = document.querySelector('.comments-section');
+    commentsSection.innerHTML = '<h4>Комментарии:</h4>'; // Сбрасываем содержимое
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.forEach(comment => {
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.textContent = `${comment.name}: ${comment.text}`;
+        commentsSection.appendChild(commentDiv);
+    });
+}
+window.onload = displayComments;
+
 </body>
 </html>
 <form id="contact-form">

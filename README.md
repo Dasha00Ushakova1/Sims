@@ -273,7 +273,7 @@
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="350" height="200" src="https://yandex.ru/video/touch/preview/1604714121103555207"></iframe>
+<iframe width="350" height="200" src="https://yandex.ru/video/preview/10391244733015096193"></iframe>
                 </div>
             </div>
         </section>

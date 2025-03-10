@@ -344,11 +344,11 @@ button:hover {
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
-    </script>
+    <script>
         window.onload = function() {
             showImages('all');
         }
-    </script>
+    <script>
 <form id="contact-form">
     <label>Имя: <input type="text" id="name"></label>
     <label>Email: <input type="email" id="email"></label>

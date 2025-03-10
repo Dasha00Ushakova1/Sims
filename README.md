@@ -305,8 +305,6 @@ window.onload = displayComments;
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
 <iframe width="350" height="200" src="https://yandex.ru/video/preview/10391244733015096193"></iframe>
-                </div>
-    </main>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">

@@ -265,8 +265,8 @@
                     </div>
                     <div class="comment-form">
                         <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                        <button onclick="addComment(1)">Отправить</button>
-                         </form>
+                        <button onclick="addComment()">Отправить</button>
+                        </form>
                     </div>
             <div class="news-item">
                 <h3>Турнир по игре</h3>
@@ -276,10 +276,6 @@
                     <div class="comment">
                         <p>Участвую!</p>
                     </div>
-                    <div class="comment-form">
-                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                        <button onclick="addComment(2)">Отправить</button>
-                         </form>
                     </div>
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>

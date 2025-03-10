@@ -247,12 +247,11 @@ button:hover {
 .modal {
     animation: fadeIn 0.5s ease-in-out;
 }
-    <style>
-<head>
-<body>
-    <header>
+    </style>
+</head>
+</body>header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">
-        <nav>
+   <nav>
             <img src="icon-menu.png.jpg" alt="Иконка 1" onclick="showImages('category1')">
             <img src="icon-menu.png.jpg" alt="Иконка 2" onclick="showImages('category2')">
             <img src="icon-menu.png.jpg" alt="Показать все" onclick="showImages('all')">

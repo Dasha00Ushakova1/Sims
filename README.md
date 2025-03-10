@@ -1,3 +1,4 @@
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -221,6 +222,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        /* Added to style the news image */
         .news-image {
             width: 100%;
             max-width: 300px;
@@ -228,7 +230,8 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-   </style>
+
+    </style>
 </head>
 <body>
     <header>
@@ -253,19 +256,39 @@
                 <h3>Обновление 1.0</h3>
                 <p>Вышло новое обновление с улучшениями графики и новыми уровнями!</p>
                 <div class="comments-section">
-                 <h4>Комментарии:</h4>
-                    <div class="comment">игрок1: шикарное обновление!</div>
-                    <div class="comment">игрок2: очень понравилось!</div>
+                    <h4>Комментарии:</h4>
+                    <div class="comment">
+                        <p>Отличная обнова! Спасибо разработчикам!</p>
+                    </div>
+                    <div class="comment">
+                        <p>Есть небольшие баги, но в целом хорошо.</p>
+                    </div>
+                    <div class="comment-form">
+                        <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
+                        <button onclick="addComment(1)">Отправить</button>
+                    </div>
                 </div>
-                <form class="comment-form" onsubmit="addComment(event)">
-                    <input type="text" id="comment-name" placeholder="Ваше имя" required>
-                    <textarea id="comment-text" placeholder="Ваш комментарий" required></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
+            </div>
+            <div class="news-item">
+                <h3>Турнир по игре</h3>
+                <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+                <div class="comments-section">
+                    <h4>Комментарии:</h4>
+                    <div class="comment">
+                        <p>Участвую!</p>
+                    </div>
+                    <div class="comment-form">
+                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
+                        <button onclick="addComment(2)">Отправить</button>
+                    </div>
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
-<img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="260" height="140" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>
+<img src="game-image.jpg" alt="Изображение из игры">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ID_ВИДЕО"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -302,54 +325,20 @@
                 modal.style.display = "none";
             }
         }
-        // Функция для добавления комментария
-function addComment(event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение формы
-    // Получаем значения имени и текста комментария
-    const name = document.getElementById('comment-name').value;
-    const text = document.getElementById('comment-text').value;
-    // Создаем объект комментария
-    const comment = {
-        name: name,
-        text: text
-    };
-    // Получаем существующие комментарии из локального хранилища
-    const comments = JSON.parse(localStorage.getItem('comments')) || [];
-    // Добавляем новый комментарий в массив
-    comments.push(comment);
-    // Сохраняем обновленный массив комментариев в локальное хранилище
-    localStorage.setItem('comments', JSON.stringify(comments));
-    // Очищаем поля ввода
-    document.getElementById('comment-name').value = '';
-    document.getElementById('comment-text').value = '';
-    // Обновляем отображение комментариев
-    displayComments();
-}
-function displayComments() {
-    const commentsSection = document.querySelector('.comments-section');
-    commentsSection.innerHTML = '<h4>Комментарии:</h4>'; // Сбрасываем содержимое
-    const comments = JSON.parse(localStorage.getItem('comments')) || [];
-    comments.forEach(comment => {
-        const commentDiv = document.createElement('div');
-        commentDiv.classList.add('comment');
-        commentDiv.textContent = `${comment.name}: ${comment.text}`;
-        commentsSection.appendChild(commentDiv);
-    });
-}
-window.onload = displayComments;
+        function addComment(newsItem) {
+            let commentText = document.getElementById('commentText' + newsItem).value;
+            if (commentText) {
+                let commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.textContent = commentText;
+                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
+                document.getElementById('commentText' + newsItem).value = '';
+            }
+        }
+         // Show "all" images by default on page load.
+        window.onload = function() {
+            showImages('all');
+        };
+    </script>
 </body>
 </html>
-<form id="contact-form">
-    <label>Имя: <input type="text" id="name"></label>
-    <label>Email: <input type="email" id="email"></label>
-    <label>Сообщение: <textarea id="message"></textarea></label>
-    <button type="submit">Отправить</button>
-</form>
-<p id="response"></p>
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        document.getElementById('response').innerText = "Форма отправлена!";
-    });
-</script>
-

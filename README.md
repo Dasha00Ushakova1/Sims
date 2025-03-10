@@ -284,7 +284,35 @@ button:hover {
         <h3>Обновление системы</h3>
         <p>Выпущено новое обновление с улучшениями и исправлениями.</p>
         <div class="comments-section">
-            <h4>Комментарии:</h4>
+            <h1>Комментарии</h1>
+    <div class="comment-section" id="comment-section">
+        <div class="comment">Первый комментарий</div>
+        <div class="comment">Второй комментарий</div>
+        <div class="comment">Третий комментарий</div>
+    </div>
+    <div class="new-comment">
+        <textarea id="comment-input" rows="4" cols="50" placeholder="Введите ваш комментарий"></textarea><br>
+        <button id="submit-comment">Добавить комментарий</button>
+    </div>
+    <script>
+        document.getElementById('submit-comment').addEventListener('click', function() {
+            const commentInput = document.getElementById('comment-input');
+            const newCommentText = commentInput.value.trim();
+            if (newCommentText) {
+                // Создаем новый элемент комментария
+                const newComment = document.createElement('div');
+                newComment.className = 'comment';
+                newComment.textContent = newCommentText;
+                // Вставляем новый комментарий в начало секции комментариев
+                const commentSection = document.getElementById('comment-section');
+                commentSection.insertBefore(newComment, commentSection.firstChild);
+                // Очищаем поле ввода
+                commentInput.value = '';
+            } else {
+                alert('Пожалуйста, введите комментарий.');
+            }
+        });
+            <h4>Комментарии:<h4>
             <div class="comment">
                 <p>Отличная обнова! Спасибо разработчикам!</p>
             </div>
@@ -293,7 +321,6 @@ button:hover {
             </div>
             <div class="comment-form">
                 <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                 <p>addComment(1)</p>
                 <button onclick="addComment(1)">Отправить</button>
             </div>
         </div>
@@ -308,7 +335,6 @@ button:hover {
             </div>
             <div class="comment-form">
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                <p>addComment(2)</p>
                 <button onclick="addComment(2)">Отправить</button>
             </div>
         </div>

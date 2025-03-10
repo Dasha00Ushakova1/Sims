@@ -339,7 +339,6 @@ function displayComments() {
     });
 }
 window.onload = displayComments;
-
 </body>
 </html>
 <form id="contact-form">
@@ -349,12 +348,10 @@ window.onload = displayComments;
     <button type="submit">Отправить</button>
 </form>
 <p id="response"></p>
-
 <script>
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         document.getElementById('response').innerText = "Форма отправлена!";
     });
 </script>
-</body>
-</html>
+

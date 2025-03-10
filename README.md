@@ -275,8 +275,6 @@
 <img src="фооооооон.jpg" alt="Изображение из игры">
 <iframe width="350" height="200" src="https://yandex.ru/video/preview/10391244733015096193"></iframe>
                 </div>
-            </div>
-        </section>
     </main>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">

@@ -271,7 +271,6 @@
                 <button type="button" onclick="addComment(1)">Отправить</button>
             </form>
         </div>
-    </section>
             <div class="news-item">
                 <h3>Турнир по игре</h3>
                 <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>

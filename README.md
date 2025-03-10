@@ -169,6 +169,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 5px;
             margin-bottom: 5px;
+            color: black;
         }
         /* Footer Styles */
         footer {

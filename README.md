@@ -282,7 +282,6 @@ button:hover {
     </style>
     <div class="news-item">
         <h3>Обновление игры</h3>
-        <p>Отличная обнова! Спасибо разработчикам!</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
             <div class="comment">

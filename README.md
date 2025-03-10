@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,11 @@
             background-color: #f4f4f4;
             color: #333;
             transition: background-color 0.3s, color 0.3s;
-            background-image: url(''); /* Укажите путь к Вашему изображению */
-            background-size: cover; /* Растягиваем изображение на весь экран */
-            background-position: center; /* Центрируем изображение */
-            background-attachment: fixed; /* Фон остается фиксированным при прокрутке */
+            /* background-image: url('\\192.168.2.90\kb6\студент\61f17c1a9a4f444bf5ec553b58a45d70.png'); */ /* Укажите путь к Вашему изображению */
+            background-image: url('images/background.png'); /* Replaced absolute with relative path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         /* Стили для темной темы */
         body.dark-mode {
@@ -35,29 +36,31 @@
             background-color: rgba(0, 0, 0, 0.9);
         }
         #logo {
-            width: 200px; /* Размер логотипа */
+            width: 200px;
             transition: transform 0.3s;
             cursor: pointer;
         }
         #logo:hover {
-            transform: scale(1.05); /* Увеличение логотипа при наведении */
+            transform: scale(1.05);
         }
         nav {
             margin: 20px 0;
-            background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для навигации */
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 10px;
             border-radius: 5px;
+            display: flex; /* Added */
+            justify-content: center; /* Added */
         }
         nav img {
-            width: 50px; /* Размер иконок меню */
+            width: 50px;
             margin: 0 10px;
             cursor: pointer;
             transition: transform 0.3s;
-            opacity: 0.7;
+            opacity: 0.7; /* Slightly dimmed */
         }
         nav img:hover {
             transform: scale(1.1);
-            opacity: 1;
+            opacity: 1; /* Fully visible on hover */
         }
         .active {
             opacity: 1;
@@ -81,31 +84,37 @@
         }
         h1 {
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для заголовка */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         h2 {
             margin-bottom: 15px;
         }
+        /* Correctly hide and show screenshots */
         .screenshot {
-            width: 300px; /* Размер скриншотов */
-            margin: 10px;
+            width: 100%; /* Make screenshots responsive */
+            max-width: 500px; /* Set a maximum width */
+            margin-bottom: 10px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            display: none; /* Скрыть скриншоты по умолчанию */
+            display: none; /* Initially hide all screenshots */
         }
         .screenshot.show {
-            display: block; /* Показать скриншоты при добавлении класса show */
+            display: block; /* Show screenshots when they have the 'show' class */
         }
- (max-width: 768px) {
+        @media (max-width: 768px) {
             #logo {
-                width: 150px; /* Уменьшение размера логотипа на мобильных устройствах */
+                width: 150px;
+            }
+            nav img {
+                width: 40px;
+                margin: 0 5px;
+            }
+            main {
+                padding: 10px;
+                margin: 10px;
             }
             .screenshot {
-                width: 300px; /* Размер скриншотов */
-            margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            display: none; /* Скрыть скриншоты по умолчанию */
+                width: 80%; /* Адаптивная ширина скриншотов */
+                max-width: none;  /* Remove max-width on small screens */
             }
         }
         #news {
@@ -213,47 +222,41 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                padding: 10px;
-            }
-            #logo {
-                width: 150px;
-            }
-            nav img {
-                width: 40px;
-                margin: 0 5px;
-            }
-            main {
-                padding: 10px;
-                margin: 10px;
-            }
+        /* Added to style the news image */
+        .news-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
+
     </style>
 </head>
 <body>
     <header>
-        <img id="logo" src="images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
+        <img id="logo" src="images/images (2).jpg" alt="Логотип игры">
         <nav>
-            <img src="diamon.html.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
-            <img src="diamon.html.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
-            <img src="diamon.html.png" alt="Показать все" onclick="showImages('all')"> <!-- Иконка для показа всех скриншотов -->
+            <img src="" alt="Иконка 1" onclick="showImages('category1')">
+            <img src="" alt="Иконка 2" onclick="showImages('category2')">
+            <img src="" alt="Показать все" onclick="showImages('all')">
         </nav>
-        <button id="theme-toggle">Сменить тему</button> <!-- Кнопка переключения темы -->
+        <button id="theme-toggle">Сменить тему</button>
     </header>
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
-        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
-        <img class="The_Sims_4_Screenshot_39.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
-        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 3"> <!-- Скриншот 3 -->
+        <img class="screenshot category1" src="images/the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1">
+        <img class="screenshot category2" src="images/игр_процесс1.jpg.webp" alt="Скриншот 2">
+        <img class="screenshot category2" src="images/images (1).jpg" alt="Скриншот 3">
         <!-- Раздел новостей -->
         <section id="news">
             <h2>Новости</h2>
             <div class="news-item">
                 <h3>Обновление 1.0</h3>
                 <p>Вышло новое обновление с улучшениями графики и новыми уровнями!</p>
+                <!-- добавьте изображение к новости -->
+                <img src="" alt="Обновление 1.0" class="news-image">
                 <div class="comments-section">
                     <h4>Комментарии:</h4>
                     <div class="comment">
@@ -271,6 +274,8 @@
             <div class="news-item">
                 <h3>Турнир по игре</h3>
                 <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+                <!-- добавьте изображение к новости -->
+                <img src="" alt="Турнир по игре" class="news-image">
                 <div class="comments-section">
                     <h4>Комментарии:</h4>
                     <div class="comment">
@@ -284,7 +289,7 @@
             </div>
         </section>
     </main>
-     <!-- Модальное окно -->
+    <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -293,24 +298,21 @@
     </div>
     <script>
         function showImages(category) {
-            // Скрыть все скриншоты
             const screenshots = document.querySelectorAll('.screenshot');
-            screenshots.forEach(img => img.classList.remove('show'));
-            // Показать скриншоты в зависимости от категории
+            screenshots.forEach(img => img.classList.remove('show')); // Hide all
             if (category === 'all') {
-                screenshots.forEach(img => img.classList.add('show')); // Показать все скриншоты
+                screenshots.forEach(img => img.classList.add('show'));
             } else if (category === 'category1') {
-                screenshots[0].classList.add('show'); // Показать первый скриншот
+                const category1Screenshots = document.querySelectorAll('.category1');
+                category1Screenshots.forEach(img => img.classList.add('show'));
             } else if (category === 'category2') {
-                screenshots[1].classList.add('show'); // Показать второй скриншот
-                screenshots[2].classList.add('show'); // Показать третий скриншот
+                const category2Screenshots = document.querySelectorAll('.category2');
+                category2Screenshots.forEach(img => img.classList.add('show'));
             }
         }
-             // Theme Toggle Function
         document.getElementById('theme-toggle').addEventListener('click', function() {
             document.body.classList.toggle('dark-mode');
         });
-        // Modal Function
         document.getElementById('logo').addEventListener('click', function() {
             document.getElementById('myModal').style.display = "block";
         });
@@ -323,7 +325,6 @@
                 modal.style.display = "none";
             }
         }
-        // Comment System Function
         function addComment(newsItem) {
             let commentText = document.getElementById('commentText' + newsItem).value;
             if (commentText) {
@@ -334,6 +335,10 @@
                 document.getElementById('commentText' + newsItem).value = '';
             }
         }
+         // Show "all" images by default on page load.
+        window.onload = function() {
+            showImages('all');
+        };
     </script>
 </body>
 </html>

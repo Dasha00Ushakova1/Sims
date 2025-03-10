@@ -399,6 +399,17 @@ button:hover {
         document.getElementById('response').innerText = "Форма отправлена!";
     });
 </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация</title>
+</head>
+<body>
+    <h6>Информация</h6>
+    <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
+    <p><a href="index.html">Вернуться на главную страницу</a></p>
+</body>
+</html>
 
 
 

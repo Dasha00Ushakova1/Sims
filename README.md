@@ -279,30 +279,6 @@
             margin: 20px;
             position: relative; /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
         }
-        .comment {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .comment-form {
-            margin-top: 10px;
-        }
-        textarea {
-            width: 100%;
-            height: 60px;
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
     </style>
     <div class="news-item">
         <h3>Обновление игры</h3>

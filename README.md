@@ -345,10 +345,9 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     </script>
-         // Show "all" images by default on page load.
         window.onload = function() {
             showImages('all');
-        };
+        }
     </script>
 <form id="contact-form">
     <label>Имя: <input type="text" id="name"></label>

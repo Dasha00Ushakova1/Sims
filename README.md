@@ -305,8 +305,6 @@
             background-color: #218838;
         }
     </style>
-</head>
-<body>
     <div class="news-item">
         <h3>Обновление игры</h3>
         <p>Отличная обнова! Спасибо разработчикам!</p>

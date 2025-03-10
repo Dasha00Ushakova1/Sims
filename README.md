@@ -223,7 +223,7 @@
             cursor: pointer;
             border-radius: 5px;
             position: absolute; /* Абсолютное позиционирование */
-            top: 20px; /* Отступ сверху */
+            top: 15px; /* Отступ сверху */
             right: 20px; /* Отступ справа */
         }
         /* Added to style the news image */

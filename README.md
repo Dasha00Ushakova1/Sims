@@ -235,18 +235,18 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="images/images (2).jpg" alt="Логотип игры">
+        <img id="logo" src="images (2).jpg" alt="Логотип игры">
         <nav>
-            <img src="" alt="Иконка 1" onclick="showImages('category1')">
-            <img src="" alt="Иконка 2" onclick="showImages('category2')">
-            <img src="" alt="Показать все" onclick="showImages('all')">
+            <img src="icon-menu.png.jpg" alt="Иконка 1" onclick="showImages('category1')">
+            <img src="icon-menu.png.jpg" alt="Иконка 2" onclick="showImages('category2')">
+            <img src="icon-menu.png.jpg" alt="Показать все" onclick="showImages('all')">
         </nav>
         <button id="theme-toggle">Сменить тему</button>
     </header>
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
-        <img class="screenshot category1" src="images/the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1">
+        <img class="screenshot category1" src="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1">
         <img class="screenshot category2" src="images/игр_процесс1.jpg.webp" alt="Скриншот 2">
         <img class="screenshot category2" src="images/images (1).jpg" alt="Скриншот 3">
         <!-- Раздел новостей -->

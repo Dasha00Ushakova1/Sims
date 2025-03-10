@@ -247,17 +247,18 @@ button:hover {
 .modal {
     animation: fadeIn 0.5s ease-in-out;
 }
-    <style>
-<head>
+    </style>
+</head>
 <body>
+    <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">
-   <nav>
+        <nav>
             <img src="icon-menu.png.jpg" alt="Иконка 1" onclick="showImages('category1')">
             <img src="icon-menu.png.jpg" alt="Иконка 2" onclick="showImages('category2')">
             <img src="icon-menu.png.jpg" alt="Показать все" onclick="showImages('all')">
-   <nav>
+        </nav>
         <button id="theme-toggle">Сменить тему</button>
-    <header>
+    </header>
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
@@ -281,9 +282,8 @@ button:hover {
     </style>
     <div class="news-item">
         <h3>Обновление игры</h3>
-        <p>Выпущено новое обновление с улучшениями и исправлениями.</p>
+        <p>Отличная обнова! Спасибо разработчикам!</p>
         <div class="comments-section">
-            <h4>Комментарии:</h4>
             <h4>Комментарии:</h4>
             <div class="comment">
                 <p>Отличная обнова! Спасибо разработчикам!</p>
@@ -298,8 +298,8 @@ button:hover {
         </div>
     </div>
     <div class="news-item">
-        <h5>Турнир по игре</h5>
-        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2025</p>
+        <h4>Турнир по игре</h4>
+        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
             <div class="comment">
@@ -329,7 +329,62 @@ button:hover {
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
+    </script>
+         <h5>О нашей игре</h5>
+<p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
+<img src="фооооооон.jpg" alt="Изображение из игры">
+<iframe width="260" height="140" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Добро пожаловать на сайт нашей игры!</p>
+        </div>
+    </div>
     <script>
+        function showImages(category) {
+            const screenshots = document.querySelectorAll('.screenshot');
+            screenshots.forEach(img => img.classList.remove('show')); // Hide all
+            if (category === 'all') {
+                screenshots.forEach(img => img.classList.add('show'));
+            } else if (category === 'category1') {
+                const category1Screenshots = document.querySelectorAll('.category1');
+                category1Screenshots.forEach(img => img.classList.add('show'));
+            } else if (category === 'category2') {
+                const category2Screenshots = document.querySelectorAll('.category2');
+                category2Screenshots.forEach(img => img.classList.add('show'));
+            }
+        }
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+        document.getElementById('logo').addEventListener('click', function() {
+            document.getElementById('myModal').style.display = "block";
+        });
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+        window.onclick = function(event) {
+            let modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        function addComment(newsItem) {
+            let commentText = document.getElementById('commentText' + newsItem).value;
+            if (commentText) {
+                let commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.textContent = commentText;
+                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
+                document.getElementById('commentText' + newsItem).value = '';
+            }
+        }
+         // Show "all" images by default on page load.
+        window.onload = function() {
+            showImages('all');
+        };
+    </script>
 <form id="contact-form">
     <label>Имя: <input type="text" id="name"></label>
     <label>Email: <input type="email" id="email"></label>
@@ -349,11 +404,7 @@ button:hover {
     <title>Информация</title>
 </head>
 <body>
-    <h7>Информация</h7>
+    <h6>Информация</h6>
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
     <p><a href="2part">глянуть</a></p>
 </body>
-
-
-
-

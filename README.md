@@ -266,35 +266,55 @@
         <section id="news">
             <h2>Новости</h2>
             <div class="news-item">
-                <h3>Обновление 1.0</h3>
-                <p>Вышло новое обновление с улучшениями графики и новыми уровнями!</p>
-                <div class="comments-section">
-                    <h4>Комментарии:</h4>
-                    <div class="comment">
-                        <p>Отличная обнова! Спасибо разработчикам!</p>
-                    </div>
-                    <div class="comment">
-                        <p>Есть небольшие баги, но в целом хорошо.</p>
-                    </div>
-                    <div class="comment-form">
-                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                        <button onclick="addComment(1)">Отправить</button>
-                        </div>
-                    </div>
-            <div class="news-item">
-                <h3>Турнир по игре</h3>
-                <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
-                <div class="comments-section">
-                    <h4>Комментарии:</h4>
-                    <div class="comment">
-                        <p>Участвую!</p>
-                    </div>
-                    <div class="comment-form">
-                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                        <button onclick="addComment(2)">Отправить</button>
-                        </div>
-                    </div>
-                    <h5>О нашей игре</h5>
+               <h3>Обновление игры</h3>
+        <p>Отличная обнова! Спасибо разработчикам!</p>
+        <div class="comments-section">
+            <h4>Комментарии:</h4>
+            <div class="comment">
+                <p>Отличная обнова! Спасибо разработчикам!</p>
+            </div>
+            <div class="comment">
+                <p>Есть небольшие баги, но в целом хорошо.</p>
+            </div>
+            <div class="comment-form">
+                <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
+                <button onclick="addComment(1)">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="news-item">
+        <h3>Турнир по игре</h3>
+        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+        <div class="comments-section">
+            <h4>Комментарии:</h4>
+            <div class="comment">
+                <p>Участвую!</p>
+            </div>
+            <div class="comment-form">
+                <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
+                <button onclick="addComment(2)">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addComment(newsId) {
+            // Получаем текст комментария в зависимости от ID новости
+            const commentText = document.getElementById(`commentText${newsId}`).value;
+            if (commentText.trim() === "") {
+                alert("Введите комментарий!");
+                return;
+            }
+            // Создаем новый элемент для комментария
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            newComment.innerHTML = `<p>${commentText}</p>`;
+            // Находим секцию комментариев для соответствующей новости
+            const commentsSection = document.querySelector(`.news-item:nth-child(${newsId}) .comments-section`);
+            commentsSection.insertBefore(newComment, commentsSection.querySelector('.comment-form'));
+            // Очищаем текстовое поле
+            document.getElementById(`commentText${newsId}`).value = "";
+        }
+         <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
 <iframe width="260" height="140" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>

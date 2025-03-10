@@ -230,7 +230,6 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-
     </style>
 </head>
 <body>
@@ -284,7 +283,7 @@
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="560" height="315" src="https://yandex.ru/video/preview/7184727214996688686"></iframe>
+<iframe width="350" height="200" src="https://yandex.ru/video/preview/7184727214996688686"></iframe>
                 </div>
             </div>
         </section>

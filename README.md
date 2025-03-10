@@ -247,8 +247,8 @@ button:hover {
 .modal {
     animation: fadeIn 0.5s ease-in-out;
 }
-    </style>
-</head>
+    <style>
+<head>
 <body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">
@@ -256,9 +256,9 @@ button:hover {
             <img src="icon-menu.png.jpg" alt="Иконка 1" onclick="showImages('category1')">
             <img src="icon-menu.png.jpg" alt="Иконка 2" onclick="showImages('category2')">
             <img src="icon-menu.png.jpg" alt="Показать все" onclick="showImages('all')">
-        </nav>
+        <nav>
         <button id="theme-toggle">Сменить тему</button>
-    </header>
+    <header>
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>

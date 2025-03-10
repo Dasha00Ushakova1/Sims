@@ -331,10 +331,6 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     <script>
-        window.onload = function() {
-            showImages('all');
-        }
-    <script>
 <form id="contact-form">
     <label>Имя: <input type="text" id="name"></label>
     <label>Email: <input type="email" id="email"></label>

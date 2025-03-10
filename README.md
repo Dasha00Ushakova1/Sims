@@ -311,21 +311,21 @@ button:hover {
                 alert('Пожалуйста, введите комментарий.');
             }
         });
-    </div class="news-item">
-        </h3>Турнир по игре<h3>
-        </p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+    <div class="news-item">
+        <h3>Турнир по игре<h3>
+        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.<p>
         <div class="comments-section">
-        </h4>Комментарии:</h4>
+        <h4>Комментарии:</h4>
             <div class="comment">
-        </p>Участвую!<p>
-        </div>
+        <p>Участвую!<p>
+        <div>
             <div class="comment-form">
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                <p>addComment(2)</p>
-                <button onclick="addComment(2)">Отправить</button>
-            </div>
-        </div>
-    </div>
+                <p>addComment(2)<p>
+                <button onclick="addComment(2)">Отправить<button>
+            <div>
+        <div>
+    <div>
     <script>
         function addComment(newsId) {
             // Получаем текст комментария в зависимости от ID новости

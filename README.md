@@ -234,7 +234,7 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="C:\Users\Студент\Downloads\images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
+        <img id="logo" src="images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
         <nav>
             <img src="diamon.html.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
             <img src="diamon.html.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
@@ -245,9 +245,9 @@
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
-        <img class="images (1).jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
-        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 2"> <!-- Скриншот 2 -->
-        <img class="The_Sims_4_Screenshot_39.webp" alt="Скриншот 3"> <!-- Скриншот 3 -->
+        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
+        <img class="The_Sims_4_Screenshot_39.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
+        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 3"> <!-- Скриншот 3 -->
         <!-- Раздел новостей -->
         <section id="news">
             <h2>Новости</h2>

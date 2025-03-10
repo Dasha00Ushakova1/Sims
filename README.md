@@ -294,7 +294,7 @@ button:hover {
             </div>
             <div class="comment-form">
                 <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <input id="commentText1">
+                 <p>addComment(1)</p>
                 <button onclick="addComment(1)">Отправить</button>
             </div>
         </div>
@@ -309,7 +309,7 @@ button:hover {
             </div>
             <div class="comment-form">
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                <input id="commentText2">
+                <p>addComment(2)</p>
                 <button onclick="addComment(2)">Отправить</button>
             </div>
         </div>

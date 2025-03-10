@@ -221,7 +221,6 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        /* Added to style the news image */
         .news-image {
             width: 100%;
             max-width: 300px;
@@ -229,7 +228,7 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-    </style>
+   </style>
 </head>
 <body>
     <header>

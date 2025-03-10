@@ -263,6 +263,38 @@
                     <textarea id="comment-text" placeholder="Ваш комментарий" required></textarea>
                     <button type="submit">Отправить</button>
                 </form>
+                // script.js
+document.getElementById('theme-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+
+function addComment(event) {
+    event.preventDefault(); // Предотвращаем отправку формы
+    const name = document.getElementById('comment-name').value;
+    const text = document.getElementById('comment-text').value;
+    const comment = {
+        name: name,
+        text: text
+    };
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.push(comment);
+    localStorage.setItem('comments', JSON.stringify(comments));
+    document.getElementById('comment-name').value = '';
+    document.getElementById('comment-text').value = '';
+    displayComments();
+}
+function displayComments() {
+    const commentsSection = document.querySelector('.comments-section');
+    commentsSection.innerHTML = '<h4>Комментарии:</h4>'; // Сбрасываем содержимое
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.forEach(comment => {
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.textContent = `${comment.name}: ${comment.text}`;
+        commentsSection.appendChild(commentDiv);
+    });
+}
+window.onload = displayComments;
             </div>
         </section>
     </main>

@@ -263,6 +263,10 @@
                     <div class="comment">
                         <p>Есть небольшие баги, но в целом хорошо.</p>
                     </div>
+                    <div class="comment-form">
+                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
+                        <button onclick="addComment(1)">Отправить</button>
+                    </div>
             <div class="news-item">
                 <h3>Турнир по игре</h3>
                 <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
@@ -342,6 +346,6 @@
         event.preventDefault();
         document.getElementById('response').innerText = "Форма отправлена!";
     });
-</script>
+
 
 

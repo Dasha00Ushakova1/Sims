@@ -290,7 +290,7 @@ button:hover {
         <div class="comment">Есть небольшие баги, но в целом хорошо.</div>
     </div>
     <div class="new-comment">
-        <textarea id="comment-input" rows="4" cols="20" placeholder="Введите ваш комментарий"></textarea><br />
+        <textarea id="comment-input" rows="4" cols="50" placeholder="Введите ваш комментарий"></textarea><br />
         <button id="submit-comment">Отправить</button>
     </div>
     <script>
@@ -311,21 +311,21 @@ button:hover {
                 alert('Пожалуйста, введите комментарий.');
             }
         });
-    <div class="news-item">
-        <h5>Турнир по игре</h5>
-        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.<p>
+    </div class="news-item">
+        </h3>Турнир по игре<h3>
+        </p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
-        <h4>Комментарии:</h4>
+        </h4>Комментарии:</h4>
             <div class="comment">
-        <p>Участвую!<p>
-        <div>
+        </p>Участвую!<p>
+        </div>
             <div class="comment-form">
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                <p>addComment(2)<p>
-                <button onclick="addComment(2)">Отправить<button>
-            <div>
-        <div>
-    <div>
+                <p>addComment(2)</p>
+                <button onclick="addComment(2)">Отправить</button>
+            </div>
+        </div>
+    </div>
     <script>
         function addComment(newsId) {
             // Получаем текст комментария в зависимости от ID новости
@@ -345,55 +345,6 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     </script>
-         <h6>О нашей игре</h6>
-<p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
-<img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="260" height="140" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>
-    <!-- Модальное окно -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>Добро пожаловать на сайт нашей игры!</p>
-        </div>
-    </div>
-    <script>
-        function showImages(category) {
-            const screenshots = document.querySelectorAll('.screenshot');
-            screenshots.forEach(img => img.classList.remove('show')); // Hide all
-            if (category === 'all') {
-                screenshots.forEach(img => img.classList.add('show'));
-            } else if (category === 'category1') {
-                const category1Screenshots = document.querySelectorAll('.category1');
-                category1Screenshots.forEach(img => img.classList.add('show'));
-            } else if (category === 'category2') {
-                const category2Screenshots = document.querySelectorAll('.category2');
-                category2Screenshots.forEach(img => img.classList.add('show'));
-            }
-        }
-        document.getElementById('theme-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-        document.getElementById('logo').addEventListener('click', function() {
-            document.getElementById('myModal').style.display = "block";
-        });
-        function closeModal() {
-            document.getElementById('myModal').style.display = "none";
-        }
-        window.onclick = function(event) {
-            let modal = document.getElementById('myModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        function addComment(newsItem) {
-            let commentText = document.getElementById('commentText' + newsItem).value;
-            if (commentText) {
-                let commentDiv = document.createElement('div');
-                commentDiv.className = 'comment';
-                commentDiv.textContent = commentText;
-                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
-                document.getElementById('commentText' + newsItem).value = '';
-            }
         }
          // Show "all" images by default on page load.
         window.onload = function() {

@@ -381,6 +381,7 @@
         event.preventDefault();
         document.getElementById('response').innerText = "Форма отправлена!";
     });
+</script>
 
 
 

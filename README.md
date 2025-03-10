@@ -267,7 +267,7 @@
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="350" height="200" src="https://dzen.ru/video/watch/66ddd922e4d4651f3dcaa1ca?f=d2d"></iframe>
+<iframe width="350" height="200" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">

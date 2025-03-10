@@ -346,5 +346,27 @@
         document.getElementById('response').innerText = "Форма отправлена!";
     });
 </script>
+<div class="gallery">
+    <img src="img1.jpg" class="thumbnail">
+    <img src="img2.jpg" class="thumbnail">
+</div>
+<img id="full-image" class="hidden">
+
+<script>
+    document.querySelectorAll('.thumbnail').forEach(img => {
+        img.addEventListener('click', function() {
+            document.getElementById('full-image').src = this.src;
+            document.getElementById('full-image').classList.remove('hidden');
+        });
+    });
+</script>
+
+<style>
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .thumbnail { width: 100px; cursor: pointer; }
+    #full-image { width: 500px; display: block; }
+    .hidden { display: none; }
+</style>
+
 
 

@@ -357,3 +357,5 @@ window.onload = displayComments;
         document.getElementById('response').innerText = "Форма отправлена!";
     });
 </script>
+</body>
+</html>

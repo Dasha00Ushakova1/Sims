@@ -271,13 +271,14 @@
             <div class="news-item">
                </head>
 <body>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Комментарии</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            position: relative; /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
         }
         .comment {
             background: #f9f9f9;

@@ -85,7 +85,7 @@
         h1 {
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            colour: #008000;
+            color: #008000;
         }
         h2 {
             margin-bottom: 15px;

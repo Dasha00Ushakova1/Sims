@@ -339,24 +339,6 @@
             showImages('all');
         };
     </script>
-    button {
-    transition: background 0.3s ease-in-out;
-}
-
-button:hover {
-    background: #ff6600;
-    color: white;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.modal {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
 </body>
 </html>
 <form id="contact-form">
@@ -373,4 +355,22 @@ button:hover {
         document.getElementById('response').innerText = "Форма отправлена!";
     });
 </script>
+button {
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff6600;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal {
+    animation: fadeIn 0.5s ease-in-out;
+}
+<script>
 

@@ -281,7 +281,8 @@ button:hover {
         }
     </style>
     <div class="news-item">
-        <h3>Обновление игры</h3>
+        <h3>Обновление игры 5.2</h3>
+        <p>Новые персонажи и функции</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
             <div class="comment">

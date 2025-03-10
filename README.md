@@ -210,7 +210,7 @@
         }
         /* Theme Toggle Button */
         #theme-toggle {
-            background-color: #4CAF50;
+           background-color: #4CAF50;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -221,6 +221,9 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 5px;
+            position: absolute; /* Абсолютное позиционирование */
+            top: 20px; /* Отступ сверху */
+            right: 20px; /* Отступ справа */
         }
         /* Added to style the news image */
         .news-image {
@@ -282,6 +285,7 @@
             </div>
         </div>
     </div>
+   <script>
     <div class="news-item">
         <h3>Турнир по игре</h3>
         <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
@@ -294,17 +298,13 @@
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
                 <button onclick="addComment(2)">Отправить</button>
             </div>
-        </div>
-    </div>
-    <script>
+            </div>
         function addComment(newsId) {
-            // Получаем текст комментария в зависимости от ID новости
             const commentText = document.getElementById(`commentText${newsId}`).value;
             if (commentText.trim() === "") {
                 alert("Введите комментарий!");
                 return;
             }
-            // Создаем новый элемент для комментария
             const newComment = document.createElement('div');
             newComment.classList.add('comment');
             newComment.innerHTML = `<p>${commentText}</p>`;

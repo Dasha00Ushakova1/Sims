@@ -247,8 +247,8 @@
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
         <img class="screenshot category1" src="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1">
-        <img class="screenshot category2" src="images/игр_процесс1.jpg.webp" alt="Скриншот 2">
-        <img class="screenshot category2" src="images/images (1).jpg" alt="Скриншот 3">
+        <img class="screenshot category2" src="images (1).jpg" alt="Скриншот 2">
+        <img class="screenshot category2" src="The_Sims_4_Screenshot_39.webp" alt="Скриншот 3">
         <!-- Раздел новостей -->
         <section id="news">
             <h2>Новости</h2>
@@ -256,7 +256,7 @@
                 <h3>Обновление 1.0</h3>
                 <p>Вышло новое обновление с улучшениями графики и новыми уровнями!</p>
                 <!-- добавьте изображение к новости -->
-                <img src="" alt="Обновление 1.0" class="news-image">
+                <img  alt="Обновление 1.0" class="news-image">
                 <div class="comments-section">
                     <h4>Комментарии:</h4>
                     <div class="comment">
@@ -275,7 +275,7 @@
                 <h3>Турнир по игре</h3>
                 <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
                 <!-- добавьте изображение к новости -->
-                <img src="" alt="Турнир по игре" class="news-image">
+                <img  alt="Турнир по игре" class="news-image">
                 <div class="comments-section">
                     <h4>Комментарии:</h4>
                     <div class="comment">

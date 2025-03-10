@@ -317,7 +317,7 @@
             </div>
             <div class="comment-form">
                 <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment(1)">Отправить</button>
+                <button onclick="addComment()">Отправить</button>
             </div>
         </div>
     </div>

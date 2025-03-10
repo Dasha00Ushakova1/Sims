@@ -267,6 +267,8 @@
                         <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
                         <button onclick="addComment()">Отправить</button>
                         </form>
+                        </div>
+                </section>
                     </div>
             <div class="news-item">
                 <h3>Турнир по игре</h3>

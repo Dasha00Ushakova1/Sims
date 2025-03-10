@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
             color: #333;
             transition: background-color 0.3s, color 0.3s;
-            background-image: url('\\192.168.2.90\kb6\студент\61f17c1a9a4f444bf5ec553b58a45d70.png'); /* Укажите путь к Вашему изображению */
+            background-image: url(''); /* Укажите путь к Вашему изображению */
             background-size: cover; /* Растягиваем изображение на весь экран */
             background-position: center; /* Центрируем изображение */
             background-attachment: fixed; /* Фон остается фиксированным при прокрутке */
@@ -236,18 +236,18 @@
     <header>
         <img id="logo" src="C:\Users\Студент\Downloads\images (2).jpg" alt="Логотип игры"> <!-- Логотип -->
         <nav>
-            <img src="C:\Users\Студент\Desktop\Ушакова и Егорова сайт\images.project_folder\diamon.html.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
-            <img src="C:\Users\Студент\Desktop\Ушакова и Егорова сайт\images.project_folder\diamon.html.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
-            <img src="C:\Users\Студент\Desktop\Ушакова и Егорова сайт\images.project_folder\diamon.html.png" alt="Показать все" onclick="showImages('all')"> <!-- Иконка для показа всех скриншотов -->
+            <img src="diamon.html.png" alt="Иконка 1" onclick="showImages('category1')"> <!-- Иконка 1 -->
+            <img src="diamon.html.png" alt="Иконка 2" onclick="showImages('category2')"> <!-- Иконка 2 -->
+            <img src="diamon.html.png" alt="Показать все" onclick="showImages('all')"> <!-- Иконка для показа всех скриншотов -->
         </nav>
         <button id="theme-toggle">Сменить тему</button> <!-- Кнопка переключения темы -->
     </header>
     <main>
         <h1>Добро пожаловать в игру!</h1>
         <h2>Скриншоты игры</h2>
-        <img class="screenshot" src="C:\Users\Студент\Downloads\the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
-        <img class="screenshot" src="C:\Users\Студент\Desktop\Ушакова и Егорова сайт\images.project_folder\игр_процесс1.jpg.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
-        <img class="screenshot" src="C:\Users\Студент\Downloads\images (1).jpg" alt="Скриншот 3"> <!-- Скриншот 3 -->
+        <img class="images (1).jpg" alt="Скриншот 1"> <!-- Скриншот 1 -->
+        <img class="the-sims-5-chego-ozhidat-5.jpg" alt="Скриншот 2"> <!-- Скриншот 2 -->
+        <img class="The_Sims_4_Screenshot_39.webp" alt="Скриншот 3"> <!-- Скриншот 3 -->
         <!-- Раздел новостей -->
         <section id="news">
             <h2>Новости</h2>

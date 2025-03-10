@@ -269,7 +269,10 @@
         <section id="news">
             <h2>Новости</h2>
             <div class="news-item">
-               <h3>Обновление игры</h3>
+               </head>
+<body>
+    <div class="news-item">
+        <h3>Обновление игры</h3>
         <p>Отличная обнова! Спасибо разработчикам!</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
@@ -285,7 +288,6 @@
             </div>
         </div>
     </div>
-   <script>
     <div class="news-item">
         <h3>Турнир по игре</h3>
         <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
@@ -298,13 +300,17 @@
                 <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
                 <button onclick="addComment(2)">Отправить</button>
             </div>
-            </div>
+        </div>
+    </div>
+    <script>
         function addComment(newsId) {
+            // Получаем текст комментария в зависимости от ID новости
             const commentText = document.getElementById(`commentText${newsId}`).value;
             if (commentText.trim() === "") {
                 alert("Введите комментарий!");
                 return;
             }
+            // Создаем новый элемент для комментария
             const newComment = document.createElement('div');
             newComment.classList.add('comment');
             newComment.innerHTML = `<p>${commentText}</p>`;
@@ -314,6 +320,7 @@
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
+    </script>
          <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">

@@ -345,7 +345,6 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     </script>
-        }
          // Show "all" images by default on page load.
         window.onload = function() {
             showImages('all');

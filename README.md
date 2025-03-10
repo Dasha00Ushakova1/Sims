@@ -290,7 +290,7 @@ button:hover {
         <div class="comment">Есть небольшие баги, но в целом хорошо.</div>
     </div>
     <div class="new-comment">
-        <textarea id="comment-input" rows="4" cols="50" placeholder="Введите ваш комментарий"></textarea><br />
+        <textarea id="comment-input" rows="4" cols="20" placeholder="Введите ваш комментарий"></textarea><br />
         <button id="submit-comment">Отправить</button>
     </div>
     <script>

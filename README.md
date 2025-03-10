@@ -234,10 +234,10 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-        button {
+     button {
     transition: background 0.3s ease-in-out;
 }
- button:hover {
+button:hover {
     background: #ff6600;
     color: white;
 }

@@ -282,8 +282,8 @@ button:hover {
         }
     </style>
     <div class="news-item">
-        <h3>Обновление игры</h3>
-        <p>Отличная обнова! Спасибо разработчикам!</p>
+        <h3>Обновление системы</h3>
+        <p>Выпущено новое обновление с улучшениями и исправлениями.</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
             <div class="comment">
@@ -299,7 +299,7 @@ button:hover {
         </div>
     </div>
     <div class="news-item">
-        <h4>Турнир по игре</h4>
+        <h3>Турнир по игре</h3>
         <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
             <h4>Комментарии:</h4>
@@ -331,6 +331,7 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     </script>
+</body>
          <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">

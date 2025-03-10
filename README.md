@@ -263,7 +263,6 @@
                     <textarea id="comment-text" placeholder="Ваш комментарий" required></textarea>
                     <button type="submit">Отправить</button>
                 </form>
-                </div>
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">

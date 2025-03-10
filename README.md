@@ -263,14 +263,6 @@
                     <div class="comment">
                         <p>Есть небольшие баги, но в целом хорошо.</p>
                     </div>
-                    <div>
-                         <!-- Форма для добавления комментария -->
-            <form id="comment-form">
-                <input type="text" id="comment-name" placeholder="Ваше имя">
-                <textarea id="comment-text" placeholder="Ваш комментарий"></textarea>
-                <button type="button" onclick="addComment(1)">Отправить</button>
-            </form>
-        </div>
             <div class="news-item">
                 <h3>Турнир по игре</h3>
                 <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>

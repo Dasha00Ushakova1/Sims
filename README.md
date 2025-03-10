@@ -330,7 +330,7 @@ button:hover {
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
-    </script>
+    <script>
         window.onload = function() {
             showImages('all');
         }

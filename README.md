@@ -254,22 +254,22 @@
                 <h3>Обновление 1.0</h3>
                 <p>Вышло новое обновление с улучшениями графики и новыми уровнями!</p>
                 <div class="comments-section">
-                    <h4>Комментарии:</h4>
-                <div class="comment">
-                    <b>игрок1:</b> шикарное обновление!
-                </div>
-                <div class="comment">
-                    <b>игрок2:</b> очень понравилось!
-                </div>
-            </div>
-            <!-- Форма для добавления комментария -->
-            <form id="comment-form">
-                <input type="text" id="comment-name" placeholder="Ваше имя">
-                <textarea id="comment-text" placeholder="Ваш комментарий"></textarea>
-                <button type="button" onclick="addComment()">Отправить</button>
-            </form>
-        </div>
-    </section>
+                  <h4>Комментарии:</h4>
+<div class="comments-section">
+    <div class="comment">
+        <b>игрок1:</b> шикарное обновление!
+    </div>
+    <div class="comment">
+        <b>игрок2:</b> очень понравилось!
+    </div>
+</div>
+<!-- Форма для добавления комментария -->
+<form id="comment-form" onsubmit="addComment(event)">
+    <input type="text" id="comment-name" placeholder="Ваше имя" required>
+    <textarea id="comment-text" placeholder="Ваш комментарий" required></textarea>
+    <button type="submit">Отправить</button>
+</form>
+
                     <h5>О нашей игре</h5>
 <p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
 <img src="фооооооон.jpg" alt="Изображение из игры">

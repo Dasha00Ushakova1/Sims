@@ -283,6 +283,9 @@ button:hover {
     <div class="news-item">
         <h3>Обновление игры 5.2</h3>
         <p>Новые персонажи и функции</p>
+        <div class="news-item">
+        <h2>Турнир по игре</h2>
+        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
             <h3>Комментарии:</h3>
             <div class="comment">
@@ -290,17 +293,7 @@ button:hover {
             </div>
             <div class="comment">
                 <p>Есть небольшие баги, но в целом хорошо.</p>
-            </div>
-            <div class="comment-form">
-                <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment(1)">Отправить</button>
-            </div>
-        </div>
-    </div>
     <p>Другая мысль~</p>
-    <div class="news-item">
-        <h2>Турнир по игре</h2>
-        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">
             <h3>Комментарии:</h3>
             <div class="comment">

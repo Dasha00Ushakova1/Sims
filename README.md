@@ -268,7 +268,7 @@
             <form id="comment-form">
                 <input type="text" id="comment-name" placeholder="Ваше имя">
                 <textarea id="comment-text" placeholder="Ваш комментарий"></textarea>
-                <button type="button" onclick="addComment()">Отправить</button>
+                <button type="button" onclick="addComment(1)">Отправить</button>
             </form>
         </div>
     </section>

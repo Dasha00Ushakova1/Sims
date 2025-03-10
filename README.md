@@ -296,7 +296,7 @@
         button {
             padding: 10px 15px;
             background-color: #28a745;
-            color: white;
+            color: black;
             border: none;
             cursor: pointer;
         }

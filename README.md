@@ -340,3 +340,18 @@
     </script>
 </body>
 </html>
+<form id="contact-form">
+    <label>Имя: <input type="text" id="name"></label>
+    <label>Email: <input type="email" id="email"></label>
+    <label>Сообщение: <textarea id="message"></textarea></label>
+    <button type="submit">Отправить</button>
+</form>
+<p id="response"></p>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('response').innerText = "Форма отправлена!";
+    });
+</script>
+
+

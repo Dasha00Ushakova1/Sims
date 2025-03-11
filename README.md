@@ -225,7 +225,7 @@
             <p>Есть небольшие баги, но в целом хорошо.</p>
         </div>
         <div class="comment">
-            <p>Го бухать?</p>
+            <p>Спааать хочу</p>
         </div>
     </div>
     <div class="comment-form">
@@ -249,6 +249,7 @@
             <button onclick="addComment(2)">Отправить</button>
         </div>
     </div>
+    <script>
      function addComment(section) {
     let commentText;
     if (section === 1) {

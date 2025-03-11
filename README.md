@@ -166,7 +166,6 @@
             height: 100%; 
             overflow: auto; 
             background-color: green; 
-            background-color: rgba(0,0,0,0.4); 
             padding-top: 60px;
         }
         .modal-content {

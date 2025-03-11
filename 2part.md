@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,7 @@
         }
         .feedback-form button {
             background: #28a745;
-            color: white;
+            color: black;
             border: none;
             padding: 10px;
             cursor: pointer;

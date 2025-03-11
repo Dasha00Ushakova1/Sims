@@ -55,6 +55,7 @@
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            color: black;
         }
         .feedback-form button {
             background: #28a745;

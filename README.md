@@ -184,7 +184,8 @@
         .close:hover,
         .close:focus {
             color: black;
-            text-decoration: none;
+            color: #0099ef;
+            text-decoration: underline;
             cursor: pointer;
         }
     </style>

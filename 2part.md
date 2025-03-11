@@ -109,16 +109,16 @@
         <div class="faq-item" onclick="toggleFAQ(this)">
             <strong>Вопрос 1: Как скачать игру?</strong>
             <div class="faq-answer">Ответ: Вы можете скачать игру на нашем официальном сайте в разделе "Скачать".</div>
-        </div>
+        <div>
         <div class="faq-item" onclick="toggleFAQ(this)">
             <strong>Вопрос 2: Есть ли мультиплеер?</strong>
             <div class="faq-answer">Ответ: Да, игра поддерживает мультиплеер для до 4-х игроков.</div>
-        </div>
+        <div>
         <div class="faq-item" onclick="toggleFAQ(this)">
             <strong>Вопрос 3: Какой минимальный системный требования?</strong>
             <div class="faq-answer">Ответ: Минимальные требования: 4 ГБ ОЗУ, процессор 2.0 ГГц, видеокарта с 1 ГБ видеопамяти.</div>
+        <div>
         </div>
-    </div>
     <script>
     </div class="feedback-form">
         <h3>Обратная связь</h3>

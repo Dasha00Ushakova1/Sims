@@ -210,7 +210,7 @@
         <section id="news">
             <h2>Новости</h2>
             <div class="news-item">
-                <h3>Обновление игры 5.2</h3>
+               <h3>Обновление игры 5.2</h3>
                 <p>Новые персонажи и функции</p>
                 <div class="comments-section">
                     <h3>Комментарии:</h3>

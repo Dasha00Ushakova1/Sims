@@ -278,7 +278,7 @@ button:hover {
             margin: 20px;
             position: relative; /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
         }
-    </style>
+    <style>
     <div class="news-item">
         <h3>Обновление игры 5.2</h3>
         <p>Новые персонажи и функции</p>
@@ -294,9 +294,8 @@ button:hover {
                 <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
                 <button onclick="addComment(1)">Отправить</button>
             </div>
-        </div>
     </div>
-    <div class="news-item">
+      <div class="news-item">
         <h2>Турнир по игре</h2>
         <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
         <div class="comments-section">

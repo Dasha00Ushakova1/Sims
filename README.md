@@ -287,8 +287,7 @@
     newComment.className = 'comment';
     newComment.innerHTML = `<p>${commentText}</p>`;
     commentList.appendChild(newComment);
-  }
-        }
+}
         // Показать изображения в зависимости от категории
         function showImages(category) {
             const screenshots = document.querySelectorAll('.screenshot');

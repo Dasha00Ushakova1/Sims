@@ -178,7 +178,7 @@
         .close {
             color: #006400;
             float: right;
-            font-size: 28px;
+            font-size: 38px;
             font-weight: bold;
         }
         .close:hover,

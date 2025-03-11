@@ -176,7 +176,7 @@
             width: 80%; 
         }
         .close {
-            color: #aaa;
+            color: #006400;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -287,9 +287,9 @@
     </script>
     <title>Информация</title> 
 <body>
-    <h2>Информация</h2>
+    <h1>Информация</h1>
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
-    <p2><a href="2part">глянуть</a></p2>
+    <p><a href="2part">глянуть</a></p>
 </body>
 </body>
 </html>

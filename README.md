@@ -174,6 +174,7 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%; 
+             box-shadow: none;
         }
         .close {
             color: #006400;

@@ -246,3 +246,11 @@
     </script>
 </body>
 </html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация</title> 
+<body>
+    <h2>Информация</h2>
+    <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
+    <p><a href="2part">глянуть</a></p>
+</body>

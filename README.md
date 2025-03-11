@@ -224,6 +224,9 @@
         <div class="comment">
             <p>Есть небольшие баги, но в целом хорошо.</p>
         </div>
+        <div class="comment">
+            <p>Го бухать?</p>
+        </div>
     </div>
     <div class="comment-form">
         <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>

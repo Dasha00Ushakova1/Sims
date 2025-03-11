@@ -248,7 +248,6 @@ button:hover {
     animation: fadeIn 0.5s ease-in-out;
 }
     </style>
-</head>
 <body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">

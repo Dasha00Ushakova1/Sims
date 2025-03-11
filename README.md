@@ -250,22 +250,6 @@
         </div>
     </div>
 </div>
-    <script>
-     function addComment(section) {
-    let commentText;
-    if (section === 1) {
-        commentText = document.getElementById('commentText1').value;
-        document.getElementById('commentText1').value = ''; // Очистить текстовое поле
-    } else {
-        commentText = document.getElementById('commentText2').value;
-        document.getElementById('commentText2').value = ''; // Очистить текстовое поле
-    }
-    const commentList = document.getElementById(`commentList${section}`);
-    const newComment = document.createElement('div');
-    newComment.className = 'comment';
-    newComment.innerHTML = `<p>${commentText}</p>`;
-    commentList.appendChild(newComment);
-}
         </section>
     </main>
     <!-- Модальное окно -->
@@ -289,16 +273,21 @@
             document.getElementById("myModal").style.display = "none";
         }
         // Добавление комментариев
-        function addComment(newsId) {
-            const commentText = document.getElementById(`commentText${newsId}`).value;
-            if (commentText) {
-                const commentSection = document.querySelector(`.news-item:nth-child(${newsId}) .comments-section`);
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment');
-                newComment.innerHTML = `<p>${commentText}</p>`;
-                commentSection.appendChild(newComment);
-                document.getElementById(`commentText${newsId}`).value = ''; // Очистить текстовое поле
-            }
+        function addComment(section) {
+    let commentText;
+    if (section === 1) {
+        commentText = document.getElementById('commentText1').value;
+        document.getElementById('commentText1').value = ''; // Очистить текстовое поле
+    } else {
+        commentText = document.getElementById('commentText2').value;
+        document.getElementById('commentText2').value = ''; // Очистить текстовое поле
+    }
+    const commentList = document.getElementById(`commentList${section}`);
+    const newComment = document.createElement('div');
+    newComment.className = 'comment';
+    newComment.innerHTML = `<p>${commentText}</p>`;
+    commentList.appendChild(newComment);
+  }
         }
         // Показать изображения в зависимости от категории
         function showImages(category) {
@@ -318,5 +307,4 @@
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
     <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> ----> глянуть</a></p>
 </body>
-        </html>
 

@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            color: #050505;
             transition: background-color 0.3s, color 0.3s;
             background-image: url('photo_5370915183163208021_x.jpg'); /* Путь к изображению */
             background-size: cover;
@@ -20,7 +20,7 @@
         }
         /* Стили для темной темы */
         body.dark-mode {
-            background-color: #333;
+            background-color: #050505;
             color: #f4f4f4;
         }
         header {

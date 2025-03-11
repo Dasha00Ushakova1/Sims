@@ -216,7 +216,7 @@
                <h3>Обновление игры 5.2</h3>
                 <p>Новые персонажи и функции</p>
                 <div class="comments-section">
-    <h3 style="color: blue; font-size: 18px;">Комментарии:</h3>
+    <h3 style="color: white; font-size: 18px;">Комментарии:</h3>
     <div class="comment">
         <p>Отличная обнова! Спасибо разработчикам!</p>
     </div>
@@ -233,7 +233,7 @@
     <h3>Турнир по игре</h3>
     <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до конца месяца.</p>
     <div class="comments-section">
-        <h3 style="color: blue; font-size: 18px;">Комментарии:</h3>
+        <h3 style="color: white; font-size: 18px;">Комментарии:</h3>
         <div class="comment">
             <p>Не могу дождаться турнира! Участвую!</p>
         </div>

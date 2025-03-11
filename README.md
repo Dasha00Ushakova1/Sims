@@ -371,11 +371,9 @@ button:hover {
             showImages('all');
         };
     </script>
-        </head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Информация</title>
-        </head>
+    <title>Информация</title> 
 <body>
     <h2>Информация</h2>
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>

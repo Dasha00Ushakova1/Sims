@@ -120,7 +120,7 @@
         </div>
     </div>
     <script>
-    <div class="feedback-form">
+    </div class="feedback-form">
         <h3>Обратная связь</h3>
         <p>Не нашли ответа на свой вопрос? Пишите, мы поможем!<p>
         <input type="text" id="name" placeholder="Ваше имя" required>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +13,7 @@
             background-color: #f4f4f4;
             color: #333;
             transition: background-color 0.3s, color 0.3s;
-            /* background-image: url('\\192.168.2.90\kb6\студент\61f17c1a9a4f444bf5ec553b58a45d70.png'); */ /* Укажите путь к Вашему изображению */
-            background-image: url('images/background.png'); /* Replaced absolute with relative path */
+            background-image: url('images/background.png'); /* Путь к изображению */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -30,10 +30,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             color: white;
         }
-        /* Стили для темной темы */
-        body.dark-mode header {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
         #logo {
             width: 200px;
             transition: transform 0.3s;
@@ -47,21 +43,18 @@
             background-color: rgba(255, 255, 255, 0.2);
             padding: 10px;
             border-radius: 5px;
-            display: flex; /* Added */
-            justify-content: center; /* Added */
+            display: flex;
+            justify-content: center;
         }
         nav img {
             width: 50px;
             margin: 0 10px;
             cursor: pointer;
             transition: transform 0.3s;
-            opacity: 0.7; /* Slightly dimmed */
+            opacity: 0.7;
         }
         nav img:hover {
             transform: scale(1.1);
-            opacity: 1; /* Fully visible on hover */
-        }
-        .active {
             opacity: 1;
         }
         main {
@@ -77,10 +70,6 @@
             margin: 20px auto;
             max-width: 800px;
         }
-        /* Стили для темной темы */
-        body.dark-mode main {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
         h1 {
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -88,33 +77,15 @@
         h2 {
             margin-bottom: 15px;
         }
-        /* Correctly hide and show screenshots */
         .screenshot {
-            width: 100%; /* Make screenshots responsive */
-            max-width: 500px; /* Set a maximum width */
+            width: 100%;
+            max-width: 500px;
             margin-bottom: 10px;
             border-radius: 5px;
-            display: none; /* Initially hide all screenshots */
+            display: none;
         }
         .screenshot.show {
-            display: block; /* Show screenshots when they have the 'show' class */
-        }
-        @media (max-width: 768px) {
-            #logo {
-                width: 150px;
-            }
-            nav img {
-                width: 40px;
-                margin: 0 5px;
-            }
-            main {
-                padding: 10px;
-                margin: 10px;
-            }
-            .screenshot {
-                width: 80%; /* Адаптивная ширина скриншотов */
-                max-width: none;  /* Remove max-width on small screens */
-            }
+            display: block;
         }
         #news {
             margin-top: 30px;
@@ -123,25 +94,15 @@
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
         }
-        /* Стили для темной темы */
-        body.dark-mode #news {
-            background-color: rgba(0, 0, 0, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
         .news-item {
             margin-bottom: 20px;
             padding: 15px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 5px;
         }
-        /* Стили для темной темы */
-        body.dark-mode .news-item {
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
         .news-item h3 {
             margin-top: 0;
         }
-        /* Comment Form Styles */
         .comment-form {
             margin-top: 10px;
         }
@@ -180,37 +141,9 @@
             bottom: 0;
             width: 100%;
         }
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1;
-        }
-        .modal-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color:#008000;;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .close {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 10px;
-            cursor: pointer;
-        }
         /* Theme Toggle Button */
         #theme-toggle {
-           background-color: #4CAF50;
+            background-color: #4CAF50;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -221,40 +154,19 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 5px;
-            position: absolute; /* Абсолютное позиционирование */
-            top: 15px; /* Отступ сверху */
-            right: 20px; /* Отступ справа */
+            position: absolute;
+            top: 15px;
+            right: 20px;
         }
-        /* Added to style the news image */
-        .news-image {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-     button {
-    transition: background 0.3s ease-in-out;
-}
-button:hover {
-    background: #ff6600;
-    color: white;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-.modal {
-    animation: fadeIn 0.5s ease-in-out;
-}
     </style>
+</head>
 <body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры">
         <nav>
-            <img src="icon-menu.png.jpg" alt="Иконка 1" onclick="showImages('category1')">
-            <img src="icon-menu.png.jpg" alt="Иконка 2" onclick="showImages('category2')">
-            <img src="icon-menu.png.jpg" alt="Показать все" onclick="showImages('all')">
+            <img src="icon-menu.png" alt="Иконка 1" onclick="showImages('category1')">
+            <img src="icon-menu.png" alt="Иконка 2" onclick="showImages('category2')">
+            <img src="icon-menu.png" alt="Показать все" onclick="showImages('all')">
         </nav>
         <button id="theme-toggle">Сменить тему</button>
     </header>
@@ -268,114 +180,72 @@ button:hover {
         <section id="news">
             <h2>Новости</h2>
             <div class="news-item">
-<body>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Комментарии</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            position: relative; /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
-        }
-    </style>
-    <div class="news-item">
-        <h3>Обновление игры 5.2</h3>
-        <p>Новые персонажи и функции</p>
-        <div class="comments-section">
-            <h3>Комментарии:</h3>
-            <div class="comment">
-                <p>Отличная обнова! Спасибо разработчикам!</p>
+                <h3>Обновление игры 5.2</h3>
+                <p>Новые персонажи и функции</p>
+                <div class="comments-section">
+                    <h3>Комментарии:</h3>
+                    <div class="comment">
+                        <p>Отличная обнова! Спасибо разработчикам!</p>
+                    </div>
+                    <div class="comment">
+                        <p>Есть небольшие баги, но в целом хорошо.</p>
+                    </div>
+                    <div class="comment-form">
+                        <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
+                        <button onclick="addComment(1)">Отправить</button>
+                    </div>
+                </div>
             </div>
-            <div class="comment">
-                <p>Есть небольшие баги, но в целом хорошо.</p>
+            <div class="news-item">
+                <h3>Турнир по игре</h3>
+                <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+                <div class="comments-section">
+                    <h3>Комментарии:</h3>
+                    <div class="comment">
+                        <p>Участвую!</p>
+                    </div>
+                    <div class="comment-form">
+                        <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
+                        <button onclick="addComment(2)">Отправить</button>
+                    </div>
+                </div>
             </div>
-            <div class="comment-form">
-                <textarea id="commentText1" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment(1)">Отправить</button>
-            </div>
-    </div>
-      <div class="news-item">
-        <h2>Турнир по игре</h2>
-        <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
-        <div class="comments-section">
-            <h3>Комментарии:</h3>
-            <div class="comment">
-                <p>Участвую!</p>
-            </div>
-            <div class="comment-form">
-                <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
-                <button onclick="addComment(2)">Отправить</button>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Сайт Игры. Все права защищены.</p>
+    </footer>
     <script>
         function addComment(newsId) {
-            // Получаем текст комментария в зависимости от ID новости
             const commentText = document.getElementById(`commentText${newsId}`).value;
             if (commentText.trim() === "") {
                 alert("Введите комментарий!");
                 return;
             }
-            // Создаем новый элемент для комментария
             const newComment = document.createElement('div');
             newComment.classList.add('comment');
             newComment.innerHTML = `<p>${commentText}</p>`;
-            // Находим секцию комментариев для соответствующей новости
             const commentsSection = document.querySelector(`.news-item:nth-child(${newsId}) .comments-section`);
             commentsSection.insertBefore(newComment, commentsSection.querySelector('.comment-form'));
-            // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
-    <script>
         function showImages(category) {
             const screenshots = document.querySelectorAll('.screenshot');
-            screenshots.forEach(img => img.classList.remove('show')); // Hide all
-            if (category === 'all') {
-                screenshots.forEach(img => img.classList.add('show'));
-            } else if (category === 'category1') {
-                const category1Screenshots = document.querySelectorAll('.category1');
-                category1Screenshots.forEach(img => img.classList.add('show'));
-            } else if (category === 'category2') {
-                const category2Screenshots = document.querySelectorAll('.category2');
-                category2Screenshots.forEach(img => img.classList.add('show'));
-            }
+            screenshots.forEach(img => {
+                if (category === 'all' || img.classList.contains(category)) {
+                    img.classList.add('show');
+                } else {
+                    img.classList.remove('show');
+                }
+            });
         }
+        // Смена темы
         document.getElementById('theme-toggle').addEventListener('click', function() {
             document.body.classList.toggle('dark-mode');
+            this.textContent = document.body.classList.contains('dark-mode') ? 'Светлая тема' : 'Темная тема';
         });
-        document.getElementById('logo').addEventListener('click', function() {
-            document.getElementById('myModal').style.display = "block";
-        });
-        function closeModal() {
-            document.getElementById('myModal').style.display = "none";
-        }
-        window.onclick = function(event) {
-            let modal = document.getElementById('myModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        function addComment(newsItem) {
-            let commentText = document.getElementById('commentText' + newsItem).value;
-            if (commentText) {
-                let commentDiv = document.createElement('div');
-                commentDiv.className = 'comment';
-                commentDiv.textContent = commentText;
-                document.querySelector('.news-item:nth-child(' + newsItem + ') .comments-section').appendChild(commentDiv);
-                document.getElementById('commentText' + newsItem).value = '';
-            }
-        }
-         // Show "all" images by default on page load.
-        window.onload = function() {
-            showImages('all');
-        };
+        // Инициализация отображения изображений
+        showImages('all');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Информация</title> 
-<body>
-    <h2>Информация</h2>
-    <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
-    <p><a href="2part">глянуть</a></p>
 </body>
+</html>

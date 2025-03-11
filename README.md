@@ -373,6 +373,7 @@ button:hover {
             showImages('all');
         };
     </script>
+    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

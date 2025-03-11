@@ -158,6 +158,14 @@
             top: 15px;
             right: 20px;
         }
+        <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Добро пожаловать на сайт нашей игры!</p>
+        </div>
+    </div>
+    <script>
     </style>
 </head>
 <body>

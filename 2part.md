@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #245c2e;
-            color: #333;
+            background-color: #4d0000;
+            color: #fff5f5;
             margin: 0;
             padding: 20px;
             transition: background-color 0.5s;

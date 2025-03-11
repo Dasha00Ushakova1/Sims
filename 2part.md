@@ -105,7 +105,8 @@
         <img src="e5804d18740c39a19fb23004b1092.jpeg" alt="Галерея 5" onclick="openImage(this.src)">
     </div>
     <div class="feedback-form">
-        <h2>Обратная связь</h2>
+        <h3>Обратная связь</h3>
+        <p>Не нашли ответа на свой вопрос? Пишите, мы поможем!<p>
         <input type="text" id="name" placeholder="Ваше имя" required>
         <input type="email" id="email" placeholder="Ваш Email" required>
         <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>

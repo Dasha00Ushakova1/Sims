@@ -17,11 +17,13 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            box-shadow: none;
         }
         /* Стили для темной темы */
         body.dark-mode {
             background-color: #050505;
             color: #f4f4f4;
+            box-shadow: none;
         }
         header {
             text-align: center;

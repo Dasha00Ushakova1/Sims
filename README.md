@@ -249,7 +249,22 @@
             <button onclick="addComment(2)">Отправить</button>
         </div>
     </div>
- </div>
+     function addComment(section) {
+    let commentText;
+    if (section === 1) {
+        commentText = document.getElementById('commentText1').value;
+        document.getElementById('commentText1').value = ''; // Очистить текстовое поле
+    } else {
+        commentText = document.getElementById('commentText2').value;
+        document.getElementById('commentText2').value = ''; // Очистить текстовое поле
+    }
+    const commentList = document.getElementById(`commentList${section}`);
+    const newComment = document.createElement('div');
+    newComment.className = 'comment';
+    newComment.innerHTML = `<p>${commentText}</p>`;
+    commentList.appendChild(newComment);
+}
+</div>
         </section>
     </main>
     <!-- Модальное окно -->

@@ -98,11 +98,11 @@
     </div>
     <h2>Галерея</h2>
     <div class="gallery">
-        <img src="images/gallery1.jpg" alt="Галерея 1" onclick="openImage(this.src)">
-        <img src="images/gallery2.jpg" alt="Галерея 2" onclick="openImage(this.src)">
-        <img src="images/gallery3.jpg" alt="Галерея 3" onclick="openImage(this.src)">
-        <img src="images/gallery4.jpg" alt="Галерея 4" onclick="openImage(this.src)">
-        <img src="images/gallery5.jpg" alt="Галерея 5" onclick="openImage(this.src)">
+        <img src="1517948329_38-sims-4-forgotten-hollow.jpg" alt="Галерея 1" onclick="openImage(this.src)">
+        <img src="1642847466_vampire_bloodlines.jpg" alt="Галерея 2" onclick="openImage(this.src)">
+        <img src="2021-04-29_174854.jpg" alt="Галерея 3" onclick="openImage(this.src)">
+        <img src="DfsBFDgTBV4BXDgnebjQRA.jpg" alt="Галерея 4" onclick="openImage(this.src)">
+        <img src="e5804d18740c39a19fb23004b1092.jpeg" alt="Галерея 5" onclick="openImage(this.src)">
     </div>
     <div class="feedback-form">
         <h2>Обратная связь</h2>

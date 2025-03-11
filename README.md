@@ -165,11 +165,11 @@
             width: 100%; 
             height: 100%; 
             overflow: auto; 
-            background-color: #228B22; 
+            background-color: rgba(0,0,0,0.4) ; 
             padding-top: 60px;
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: #228B22;
             margin: 5% auto; 
             padding: 20px;
             border: 1px solid #888;

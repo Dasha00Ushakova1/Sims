@@ -249,6 +249,7 @@
             <button onclick="addComment(2)">Отправить</button>
         </div>
     </div>
+</div>
     <script>
      function addComment(section) {
     let commentText;
@@ -265,7 +266,6 @@
     newComment.innerHTML = `<p>${commentText}</p>`;
     commentList.appendChild(newComment);
 }
-</div>
         </section>
     </main>
     <!-- Модальное окно -->
@@ -318,4 +318,5 @@
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
     <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> ----> глянуть</a></p>
 </body>
+        </html>
 

@@ -329,7 +329,7 @@ button:hover {
             // Очищаем текстовое поле
             document.getElementById(`commentText${newsId}`).value = "";
         }
-    </script>
+    <script>
         function showImages(category) {
             const screenshots = document.querySelectorAll('.screenshot');
             screenshots.forEach(img => img.classList.remove('show')); // Hide all
@@ -373,12 +373,11 @@ button:hover {
             showImages('all');
         };
     </script>
-    </script>
-<head>
+        </head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информация</title>
-</head>
+        </head>
 <body>
     <h2>Информация</h2>
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>

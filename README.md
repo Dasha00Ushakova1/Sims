@@ -330,18 +330,6 @@ button:hover {
             document.getElementById(`commentText${newsId}`).value = "";
         }
     </script>
-         <h2>О нашей игре</h2>
-<p>Это увлекательная компьютерная игра в жанре RPG с открытым миром...</p>
-<img src="фооооооон.jpg" alt="Изображение из игры">
-<iframe width="230" height="140" src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4"></iframe>
-    <!-- Модальное окно -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>Добро пожаловать на сайт нашей игры!</p>
-        </div>
-    </div>
-    <script>
         function showImages(category) {
             const screenshots = document.querySelectorAll('.screenshot');
             screenshots.forEach(img => img.classList.remove('show')); // Hide all
@@ -385,19 +373,6 @@ button:hover {
             showImages('all');
         };
     </script>
-<form id="contact-form">
-    <label>Имя: <input type="text" id="name"></label>
-    <label>Email: <input type="email" id="email"></label>
-    <label>Сообщение: <textarea id="message"></textarea></label>
-    <button type="submit">Отправить</button>
-</form>
-<p id="response"></p>
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        document.getElementById('response').innerText = "Форма отправлена!";
-    });
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

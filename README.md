@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
             color: #333;
             transition: background-color 0.3s, color 0.3s;
-            background-image: url('images/background.png'); /* Путь к изображению */
+            background-image: url('2b42b1e0-57fb-4d98-93f9-678ba98856ec.png'); /* Путь к изображению */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

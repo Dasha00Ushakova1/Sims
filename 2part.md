@@ -59,11 +59,11 @@
         }
         .feedback-form button {
             background: #28a745;
-            color: black;
             border: none;
             padding: 10px;
             cursor: pointer;
             transition: background 0.3s;
+            color: black;
         }
         .feedback-form button:hover {
             background: #218838;

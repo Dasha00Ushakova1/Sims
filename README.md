@@ -36,7 +36,17 @@
             width: 200px;
             transition: transform 0.3s;
             cursor: pointer;
+            opacity: 0; /* Начальное состояние: невидимый */
+             transform: translateY(-20px); /* Начальное состояние: немного выше */
         }
+        /* Класс для активации анимации появления */
+.show-logo {
+    opacity: 1; /* Конечное состояние: видимый */
+    transform: translateY(0); /* Конечное состояние: на своем месте */
+}  window.onload = function() {
+    const logo = document.getElementById('logo');
+    logo.classList.add('show-logo'); // Добавляем класс для анимации
+};
         #logo:hover {
             transform: scale(1.05);
         }

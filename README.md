@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -212,9 +212,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Сайт Игры. Все права защищены.</p>
-    </footer>
     <script>
         function addComment(newsId) {
             const commentText = document.getElementById(`commentText${newsId}`).value;

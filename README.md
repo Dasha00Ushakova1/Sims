@@ -194,9 +194,9 @@
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">
         <nav>
-            <img src="icon-menu.png" alt="Иконка 1" onclick="showImages('category1')">
-            <img src="icon-menu.png" alt="Иконка 2" onclick="showImages('category2')">
-            <img src="icon-menu.png" alt="Показать все" onclick="showImages('all')">
+            <img src="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Photoroom.png" alt="Иконка 1" onclick="showImages('category1')">
+            <img src="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Photoroom.png" alt="Иконка 2" onclick="showImages('category2')">
+            <img src="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Photoroom.png" alt="Показать все" onclick="showImages('all')">
         </nav>
         <button id="theme-toggle">Сменить тему</button>
     </header>

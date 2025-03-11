@@ -169,7 +169,7 @@
             padding-top: 60px;
         }
         .modal-content {
-            background-color: #228B22;
+            background-color: #ffffff;
             margin: 5% auto; 
             padding: 20px;
             border: 1px solid #888;

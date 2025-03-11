@@ -93,7 +93,7 @@
             display: none; /* Убираем стандартный маркер */
         }
         summary::before {
-            content: "▶ "; /* Добавляем свой маркер */
+            content: " "; /* Добавляем свой маркер */
             font-size: 1.2em;
             transition: transform 0.3s;
         }

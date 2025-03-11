@@ -244,10 +244,6 @@
         // Инициализация отображения изображений
         showImages('all');
     </script>
-</body>
-</html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информация</title> 
 <body>
     <h2>Информация</h2>

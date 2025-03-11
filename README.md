@@ -70,12 +70,9 @@
             margin: 20px auto;
             max-width: 800px;
         }
-        h1 {
+        h1, h2 {
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        h2 {
-            margin-bottom: 15px;
         }
         .screenshot {
             width: 100%;
@@ -126,7 +123,7 @@
         }
         .comment {
             padding: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border:1px solid rgba(255, 255, 255, 0.2);
             border-radius: 5px;
             margin-bottom: 5px;
             color: white;
@@ -158,19 +155,44 @@
             top: 15px;
             right: 20px;
         }
-        <!-- Модальное окно -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>Добро пожаловать на сайт нашей игры!</p>
-        </div>
-    </div>
-    <script>
+        /* Модальное окно */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img id="logo" src="images (2).jpg" alt="Логотип игры">
+        <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">
         <nav>
             <img src="icon-menu.png" alt="Иконка 1" onclick="showImages('category1')">
             <img src="icon-menu.png" alt="Иконка 2" onclick="showImages('category2')">
@@ -206,11 +228,11 @@
             </div>
             <div class="news-item">
                 <h3>Турнир по игре</h3>
-                <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до 20.12.2023.</p>
+                <p>Объявляем о начале турнира с ценными призами! Регистрация открыта до конца месяца.</p>
                 <div class="comments-section">
                     <h3>Комментарии:</h3>
                     <div class="comment">
-                        <p>Участвую!</p>
+                        <p>Не могу дождаться турнира! Участвую!</p>
                     </div>
                     <div class="comment-form">
                         <textarea id="commentText2" placeholder="Оставить комментарий"></textarea>
@@ -220,37 +242,52 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 Игра. Все права защищены.</p>
+    </footer>
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Информация об игре</h2>
+            <p>Здесь вы можете добавить описание или информацию об игре.</p>
+        </div>
+    </div>
     <script>
+        // Переключение темы
+        document.getElementById('theme-toggle').onclick = function() {
+            document.body.classList.toggle('dark-mode');
+        };
+        // Модальное окно
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        // Добавление комментариев
         function addComment(newsId) {
             const commentText = document.getElementById(`commentText${newsId}`).value;
-            if (commentText.trim() === "") {
-                alert("Введите комментарий!");
-                return;
+            if (commentText) {
+                const commentSection = document.querySelector(`.news-item:nth-child(${newsId}) .comments-section`);
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                newComment.innerHTML = `<p>${commentText}</p>`;
+                commentSection.appendChild(newComment);
+                document.getElementById(`commentText${newsId}`).value = ''; // Очистить текстовое поле
             }
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment');
-            newComment.innerHTML = `<p>${commentText}</p>`;
-            const commentsSection = document.querySelector(`.news-item:nth-child(${newsId}) .comments-section`);
-            commentsSection.insertBefore(newComment, commentsSection.querySelector('.comment-form'));
-            document.getElementById(`commentText${newsId}`).value = "";
         }
+        // Показать изображения в зависимости от категории
         function showImages(category) {
             const screenshots = document.querySelectorAll('.screenshot');
-            screenshots.forEach(img => {
-                if (category === 'all' || img.classList.contains(category)) {
-                    img.classList.add('show');
+            screenshots.forEach(screenshot => {
+                if (category === 'all' || screenshot.classList.contains(category)) {
+                    screenshot.classList.add('show');
                 } else {
-                    img.classList.remove('show');
+                    screenshot.classList.remove('show');
                 }
             });
         }
-        // Смена темы
-        document.getElementById('theme-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            this.textContent = document.body.classList.contains('dark-mode') ? 'Светлая тема' : 'Темная тема';
-        });
-        // Инициализация отображения изображений
-        showImages('all');
     </script>
     <title>Информация</title> 
 <body>
@@ -258,3 +295,5 @@
     <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
     <p><a href="2part">глянуть</a></p>
 </body>
+</body>
+</html>

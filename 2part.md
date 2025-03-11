@@ -106,7 +106,7 @@
     <h1>О нашей игре</h1>
     <div class="game-description">
         <p>Здесь вы можете узнать больше о нашей увлекательной игре, которая погружает вас в мир приключений и захватывающих событий!</p>
-        <img src="images/game_image.jpg" alt="Изображение из игры" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+        <img src="black.png" alt="Изображение из игры" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
         <h2>Смотрите наш трейлер</h2>
         <video width="100%" controls>
             <source src="10 ОБЯЗАТЕЛЬНЫХ модов для СИМС 4 - смотреть онлайн в поиске Яндекса по Видео - Google Chrome 2025-03-10 21-14-52.mp4" type="video/mp4">

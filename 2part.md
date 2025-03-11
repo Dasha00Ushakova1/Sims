@@ -55,10 +55,10 @@
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-            color: black;
+            color: white;
         }
         .feedback-form button {
-            background: #28a745;
+            background: #9c091a;
             border: none;
             padding: 10px;
             cursor: pointer;

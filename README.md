@@ -242,9 +242,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Игра. Все права защищены.</p>
-    </footer>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">

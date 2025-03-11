@@ -246,8 +246,8 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Информация об игре</h2>
-            <p>Здесь вы можете добавить описание или информацию об игре.</p>
+            <h2>Благодарим за посещение сайта!</h2>
+            <p>Надеюсь,что вам понравится игра</p>
         </div>
     </div>
     <script>

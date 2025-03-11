@@ -71,6 +71,7 @@
         .faq {
             margin-top: 40px;
             animation: fadeIn 1s;
+            color: black;
         }
         details {
             margin-bottom: 10px;

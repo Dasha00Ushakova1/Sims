@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
             color: #050505;
             transition: background-color 0.3s, color 0.3s;
-            background-image: url('2.png'); /* Путь к изображению */
+            background-image: url('2025-03-12_19-33-20.png'); /* Путь к изображению */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

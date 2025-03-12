@@ -176,7 +176,14 @@
             border: 1px solid #000000;
             width: 80%; 
              box-shadow: none;
-        }
+      } .modal.dark-mode {
+          background-color: #042601;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #FFFFE0;
+            width: 80%; 
+             box-shadow: none;   
+     }
         .close {
             color: #006400;
             float: right;

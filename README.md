@@ -195,7 +195,7 @@
 </head>
 <body>
     <body>
-    <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> О нас </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> О нас </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> О нас </a></p>
+    <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> О игре </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> Галерея </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> Вопросы </a></p  <p><a href="2part" style="color: #7FFF00; font-size: 40px;"> Новая версия </a></p 
 </body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">

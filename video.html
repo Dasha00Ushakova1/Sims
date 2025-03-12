@@ -6,8 +6,8 @@
     <title>Трейлер</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #4d0000;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #4d0000, #000000);
             color: #fff5f5;
             margin: 0;
             padding: 20px;
@@ -15,74 +15,29 @@
         }
         h1, h2 {
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .game-description {
             margin: 20px 0;
             animation: fadeIn 1s;
+            border: 2px solid #9c091a;
+            border-radius: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .feedback-form {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-            background: black;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            animation: fadeIn 1s;
+        video {
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
-        .feedback-form input, .feedback-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            color: black;
-        }
-        .feedback-form button {
-            background: #9c091a;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-            color: black;
-        }
-        .feedback-form button:hover {
-            background: #218838;
-        }
-        .faq {
+        footer {
+            text-align: center;
             margin-top: 40px;
-            animation: fadeIn 1s;
-            color: black;
-        }
-        details {
-            margin-bottom: 10px;
-            cursor: pointer;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            transition: background 0.3s;
-        }
-        details:hover {
-            background: #f9f9f9;
-        }
-        summary {
-            font-weight: bold;
-            outline: none; /* Убираем обводку при фокусе */
-        }
-        summary::-webkit-details-marker {
-            display: none; /* Убираем стандартный маркер */
-        }
-        summary::before {
-            content: " "; /* Добавляем свой маркер */
-            font-size: 1.2em;
-            transition: transform 0.3s;
-        }
-        details[open] summary::before {
-            transform: rotate(90deg); /* Поворачиваем маркер при открытии */
+            font-size: 0.9em;
+            color: #ccc;
         }
     </style>
 </head>
@@ -95,5 +50,8 @@
             Ваш браузер не поддерживает видео.
         </video>
     </div>
+    <footer>
+        <p>&copy; 2023 Наша Игра. Все права защищены.</p>
+    </footer>
 </body>
 </html>

@@ -196,7 +196,7 @@
 <body>
     <body>
     <p style="display: inline;">
-        <a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">О игре</a>
+        <a href="News.md" style="color: #7FFF00; font-size: 30px; text-decoration: none;">О игре</a>
     </p>
     <p style="display: inline; margin-left: 20px;">
         <a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Галерея</a>

@@ -142,7 +142,7 @@
         }
         /* Theme Toggle Button */
         #theme-toggle {
-            background-color: #4CAF50;
+            background-color: #8B0000;
             border: none;
             color: white;
             padding: 10px 20px;

@@ -205,7 +205,7 @@
 <a href="questiiiiiiii.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Вопросы</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
-<a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Новая версия</a>
+<a href="video.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Новая версия</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
 <a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">❤</a>

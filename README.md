@@ -113,7 +113,7 @@
             border: 1px solid #ccc;
         }
         .comment-form button {
-            background-color: #5cb85c;
+            background-color: #8B0000;
             color: white;
             padding: 8px 12px;
             border: none;

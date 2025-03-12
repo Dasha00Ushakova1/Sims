@@ -195,7 +195,7 @@
 </head>
 <body>
     <body>
-    <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> О нас </a></p>
+    <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> О нас </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> О нас </a></p>  <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> О нас </a></p>
 </body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">

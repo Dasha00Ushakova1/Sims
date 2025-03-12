@@ -19,7 +19,7 @@
 }
         /* Стили для темной темы */
         body.dark-mode {
-            background-color: #050505;
+            background-color: black;
             color: #f4f4f4;
             box-shadow: none;
         }

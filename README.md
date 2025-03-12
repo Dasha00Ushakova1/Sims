@@ -214,9 +214,9 @@
     <header>
         <img id="logo" src="IMG_20250312_164435.jpg" alt="Логотип игры" onclick="openModal()">
         <nav>
-            <img src="IMG_20250312_162610.jpg" alt="Иконка 1" onclick="showImages('category1')">
-            <img src="IMG_20250312_162610.jpg" alt="Иконка 2" onclick="showImages('category2')">
-            <img src="IMG_20250312_162610.jpg" alt="Показать все" onclick="showImages('all')">
+            <img src="IMG_20250312_171323_844.jpg" alt="Иконка 1" onclick="showImages('category1')">
+            <img src="IMG_20250312_171323_844.jpg" alt="Иконка 2" onclick="showImages('category2')">
+            <img src="IMG_20250312_171323_844.jpg" alt="Показать все" onclick="showImages('all')">
         </nav>
         <button id="theme-toggle">Сменить тему</button>
     </header>

@@ -196,19 +196,19 @@
 <body>
     <body>
 <p style="display: inline; margin-left: 70px;">
-<a href="3part.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">О игре</a>
+<a href="3part.html" style="color: #8B0000	; font-size: 30px; text-decoration: none;">О игре</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
-<a href="GALERY.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Галерея</a>
+<a href="GALERY.html" style="color:#8B0000	; font-size: 30px; text-decoration: none;">Галерея</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
-<a href="questiiiiiiii.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Вопросы</a>
+<a href="questiiiiiiii.html" style="color: #8B0000	; font-size: 30px; text-decoration: none;">Вопросы</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
-<a href="video.html" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Новая версия</a>
+<a href="video.html" style="color:#8B0000; font-size: 30px; text-decoration: none;">Новая версия</a>
 </p>
 <p style="display: inline; margin-left: 70px;">
-<a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">❤</a>
+<a href="2part" style="color: #8B0000	; font-size: 30px; text-decoration: none;">❤</a>
 </p>
 </body>
     <header>

@@ -195,22 +195,13 @@
 </head>
 <body>
     <body>
-<p style="display: inline; margin-left: 70px;">
-<a href="3part.html" style="color: #8B0000	; font-size: 30px; text-decoration: none;">О игре</a>
-</p>
-<p style="display: inline; margin-left: 70px;">
-<a href="GALERY.html" style="color:#8B0000	; font-size: 30px; text-decoration: none;">Галерея</a>
-</p>
-<p style="display: inline; margin-left: 70px;">
-<a href="questiiiiiiii.html" style="color: #8B0000	; font-size: 30px; text-decoration: none;">Вопросы</a>
-</p>
-<p style="display: inline; margin-left: 70px;">
-<a href="video.html" style="color:#8B0000; font-size: 30px; text-decoration: none;">Новая версия</a>
-</p>
-<p style="display: inline; margin-left: 70px;">
-<a href="2part" style="color: #8B0000	; font-size: 30px; text-decoration: none;">❤</a>
-</p>
-</body>
+<div class="nav">
+    <a href="3part.html">О игре</a>
+    <a href="GALERY.html">Галерея</a>
+    <a href="questiiiiiiii.html">Вопросы</a>
+    <a href="video.html">Новая версия</a>
+    <a href="2part">❤</a>
+</div>
     <header>
         <img id="logo" src="IMG_20250312_164435.jpg" alt="Логотип игры" onclick="openModal()">
         <nav>
@@ -218,6 +209,7 @@
             <img src="IMG_20250312_171323_844.jpg" alt="Иконка 2" onclick="showImages('category2')">
             <img src="IMG_20250312_171323_844.jpg" alt="Показать все" onclick="showImages('all')">
         </nav>
+        </body>
         <button id="theme-toggle">Сменить тему</button>
     </header>
     <main>

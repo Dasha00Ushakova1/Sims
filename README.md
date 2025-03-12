@@ -40,7 +40,7 @@
         }
         nav {
             margin: 20px 0;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color:black;
             padding: 10px;
             border-radius: 5px;
             display: flex;

@@ -226,7 +226,7 @@
     <a href="GALERY.html">Галерея</a>
     <a href="questiiiiiiii.html">Вопросы</a>
     <a href="video.html">Новая версия</a>
-    <a href="2part">❤</a>
+    <a href="2part">🌹</a>
 </div>
     <header>
         <img id="logo" src="IMG_20250312_164435.jpg" alt="Логотип игры" onclick="openModal()">

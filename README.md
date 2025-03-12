@@ -7,18 +7,16 @@
     <style>
         /* Общие стили */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #050505;
-            transition: background-color 0.3s, color 0.3s;
-            background-image: url('2025-03-12_19-33-20.png'); /* Путь к изображению */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            box-shadow: none;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #050505;
+    transition: background-color 0.3s, color 0.3s;
+    background: linear-gradient(to bottom, #c7ffbe, #acfe52, #2fbf2a, #248500, #508116);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: none;
+}
         /* Стили для темной темы */
         body.dark-mode {
             background-color: #050505;

@@ -103,16 +103,23 @@
     </style>
 </head>
 <body>
+    <h1>О игре</h1>
+    <div class="game-description">
+        <p>Описание игры и ее особенностей.</p>
     </div>
     <h2>Галерея</h2>
     <div class="gallery">
         <img src="1517948329_38-sims-4-forgotten-hollow.jpg" alt="Галерея 1" onclick="openImage(this.src)">
-                <img src="1642847466_vampire_bloodlines.jpg" alt="Галерея 2" onclick="openImage(this.src)">
+        <img src="1642847466_vampire_bloodlines.jpg" alt="Галерея 2" onclick="openImage(this.src)">
         <img src="2021-04-29_174854.jpg" alt="Галерея 3" onclick="openImage(this.src)">
         <img src="DfsBFDgTBV4BXDgnebjQRA.jpg" alt="Галерея 4" onclick="openImage(this.src)">
         <img src="e5804d18740c39a19fb23004b1092.jpeg" alt="Галерея 5" onclick="openImage(this.src)">
-    </div
+    </div>
+    <script>
+        function openImage(src) {
+            // Здесь можно добавить функционал для открытия изображения в модальном окне или новой вкладке
+            window.open(src, '_blank');
+        }
+    </script>
 </body>
 </html>
-
-

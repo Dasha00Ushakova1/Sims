@@ -221,7 +221,6 @@
             color: white;
         }
     </style>
-</head>
 <body>
 <div class="nav">
     <a href="3part.html">О игре</a>

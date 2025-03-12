@@ -195,9 +195,7 @@
 </head>
 <body>
     <body>
-    <h1>Информация</h1>
-    <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
-    <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> ----> глянуть</a></p>
+    <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> О нас </a></p>
 </body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">
@@ -305,10 +303,5 @@
             });
         }
     </script>
-    <title>Информация</title> 
-<body>
-    <h1>Информация</h1>
-    <p>Это страница с дополнительной информацией. Здесь вы можете узнать больше о нашем проекте.</p>
-    <p><a href="2part" style="color: #7FFF00; font-size: 20px;"> ----> глянуть</a></p>
-</body>
+  
 

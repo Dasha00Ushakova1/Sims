@@ -1,9 +1,8 @@
-
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О игре</title>
+    <title>Галерея</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,12 +12,16 @@
             padding: 20px;
             transition: background-color 0.5s;
         }
-        h1, h2 {
+        h1 {
             text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .game-description {
             margin: 20px 0;
             animation: fadeIn 1s;
+            text-align: center;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -30,15 +33,49 @@
             justify-content: center;
             gap: 10px;
             animation: fadeIn 1s;
+            margin-bottom: 40px;
         }
         .gallery img {
             width: 200px;
             height: auto;
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .gallery img:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .modal:target {
+            display: flex;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
         }
         .feedback-form {
             max-width: 400px;
@@ -63,7 +100,8 @@
             padding: 10px;
             cursor: pointer;
             transition: background 0.3s;
-            color: black;
+            color: white;
+            border-radius: 5px;
         }
         .feedback-form button:hover {
             background: #218838;
@@ -95,7 +133,142 @@
         summary::before {
             content: " "; /* Добавляем свой маркер */
             font-size: 1.2em;
-            transition: transform 0.3s;
+            <html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4d0000;
+            color: #fff5f5;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .game-description {
+            margin: 20px 0;
+            animation: fadeIn 1s;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            animation: fadeIn 1s;
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .modal:target {
+            display: flex;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .feedback-form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: black;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1s;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: black;
+        }
+        .feedback-form button {
+            background: #9c091a;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            color: white;
+            border-radius: 5px;
+        }
+        .feedback-form button:hover {
+            background: #218838;
+        }
+        .faq {
+            margin-top: 40px;
+            animation: fadeIn 1s;
+            color: black;
+        }
+        details {
+            margin-bottom: 10px;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        details:hover {
+            background: #f9f9f9;
+        }
+        summary {
+            font-weight: bold;
+            outline: none; /* Убираем обводку при фокусе */
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Убираем стандартный маркер */
+        }
+        summary::before {
+            content: " "; /* Добавляем свой маркер */
+            font-size: 1.2em;
+                        transition: transform 0.3s;
         }
         details[open] summary::before {
             transform: rotate(90deg); /* Поворачиваем маркер при открытии */
@@ -105,9 +278,8 @@
 <body>
     <h1>Галерея изображений</h1>
     <div class="game-description">
-        <p></p>
+        <p>Добро пожаловать в нашу галерею! Здесь вы можете насладиться красивыми изображениями из увлекательного мира игр.</p>
     </div>
-    
     
     <div class="gallery">
         <img src="1517948329_38-sims-4-forgotten-hollow.jpg" alt="Галерея 1" onclick="openImage(this.src)">
@@ -117,11 +289,31 @@
         <img src="e5804d18740c39a19fb23004b1092.jpeg" alt="Галерея 5" onclick="openImage(this.src)">
     </div>
 
+    <!-- Модальное окно для просмотра изображений -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Изображение">
+    </div>
+
     <script>
         function openImage(src) {
-            // Здесь можно добавить функционал для открытия изображения в модальном окне или новой вкладке
-            window.open(src, '_blank');
+            document.getElementById('modal-image').src = src;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Закрытие модального окна при клике вне изображения
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                closeModal();
+            }
         }
     </script>
 </body>
 </html>
+
+

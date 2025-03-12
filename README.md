@@ -170,7 +170,7 @@
             padding-top: 60px;
         }
         .modal-content {
-            background-color: #042601;
+            background-color:#038242;
             margin: 5% auto; 
             padding: 20px;
             border: 1px solid #FFFFE0;
@@ -186,7 +186,6 @@
         .close:hover,
         .close:focus {
             color: white;
-            color: #0099ef;
             text-decoration: underline;
             cursor: pointer;
         }

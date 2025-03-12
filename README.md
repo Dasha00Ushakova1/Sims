@@ -192,7 +192,6 @@
             cursor: pointer;
         }
     </style>
-</head>
 <body>
     <style>
         body {

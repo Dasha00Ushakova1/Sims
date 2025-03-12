@@ -212,7 +212,7 @@
 </p>
 </body>
     <header>
-        <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">
+        <img id="logo" src="4ff4cb2ac6467dda3a2258418738028c.jpg" alt="Логотип игры" onclick="openModal()">
         <nav>
             <img src="IMG_20250312_162610.jpg" alt="Иконка 1" onclick="showImages('category1')">
             <img src="IMG_20250312_162610.jpg" alt="Иконка 2" onclick="showImages('category2')">

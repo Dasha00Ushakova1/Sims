@@ -214,7 +214,7 @@
             padding: 10px 20px;
             border: 2px solid #8B0000;
             border-radius: 5px;
-            transition: background-color white;
+            transition: background-color : white;
         }
         .nav a:hover {
             background-color: #8B0000;

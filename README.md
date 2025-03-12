@@ -195,7 +195,7 @@
 </head>
 <body>
     <body>
-    <p style="display: inline;">
+    <p style="display: inline; margin-left: 30px;">
         <a href="News" style="color: #7FFF00; font-size: 30px; text-decoration: none;">О игре</a>
     </p>
     <p style="display: inline; margin-left: 70px;">

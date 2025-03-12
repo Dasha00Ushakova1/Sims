@@ -46,6 +46,6 @@
     <div class="game-description">
         <p>Здесь вы можете узнать больше о нашей увлекательной игре, которая погружает вас в мир приключений и захватывающих событий!</p>
         <img src="black.png" alt="Изображение из игры" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+    </div> <!-- Закрывающий тег для div добавлен -->
 </body>
 </html>
-

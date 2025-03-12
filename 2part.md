@@ -109,7 +109,7 @@
         <img src="black.png" alt="Изображение из игры" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
         <h2>Смотрите наш трейлер</h2>
         <video width="100%" controls>
-            <source src="VID_20250312_113451.mp4" type="video/mp4">
+            <source src="VID_20250312_115442.mp4" type="video/mp4">
             Ваш браузер не поддерживает видео.
         </video>
     </div>

@@ -207,6 +207,9 @@
 <p style="display: inline; margin-left: 70px;">
 <a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Новая версия</a>
 </p>
+<p style="display: inline; margin-left: 70px;">
+<a href="2part" style="color: #7FFF00; font-size: 30px; text-decoration: none;">Вся информация </a>
+</p>
 </body>
     <header>
         <img id="logo" src="images (2).jpg" alt="Логотип игры" onclick="openModal()">

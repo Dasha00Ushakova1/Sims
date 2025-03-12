@@ -185,7 +185,7 @@
         }
         .close:hover,
         .close:focus {
-            color: black;
+            color: white;
             color: #0099ef;
             text-decoration: underline;
             cursor: pointer;

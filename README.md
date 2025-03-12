@@ -12,7 +12,7 @@
     padding: 0;
     color: #050505;
     transition: background-color 0.3s, color 0.3s;
-    background: linear-gradient(to bottom, #c7ffbe, #acfe52, #2fbf2a, #248500, #508116);
+    background: linear-gradient(to bottom,  #acfe52, #2fbf2a, #248500, #508116);
     background-size: cover;
     background-attachment: fixed;
     box-shadow: none;

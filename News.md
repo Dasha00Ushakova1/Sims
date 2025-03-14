@@ -39,9 +39,32 @@
         details[open] summary::before {
             transform: rotate(90deg); /* Поворачиваем маркер при открытии */
         }
+          .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .nav a {
+            color: #8B0000;
+            font-size: 24px;
+            text-decoration: none;
+            margin: 10px 30px;
+            padding: 10px 20px;
+            border: 2px solid #8B0000;
+            border-radius: 5px;
+            transition: background-color : white;
+        }
+        .nav a:hover {
+            background-color: #8B0000;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <div class="nav">
+    <a href="README.md">Главная страницаа</a>
+</div>
     <h1>О нашей игре</h1>
     <div class="game-description">
         <p>Здесь вы можете узнать больше о нашей увлекательной игре, которая погружает вас в мир приключений и захватывающих событий!</p>
